@@ -1,0 +1,46 @@
+{
+    "national": [
+        {
+            "title": "Design Development Of Fault Diagnosis By Using Fuzzy Neural Networks For Hydroponic Systems In Iot Environment",
+            "applicationNumber": 201941048257,
+            "dateFiled": "26th November, 2019"
+        },
+        {
+            "title": "System and Method For For Automatically Detecting Malaria",
+            "applicationNumber": 201941051401,
+            "dateFiled": "13th December, 2019"
+        },
+        {
+            "title": "SYSTEM AND METHOD FOR AUTOMATICALLY SUMMARIZING TEXT",
+            "applicationNumber": 202041001299,
+            "dateFiled": "11th January, 2020"
+        },
+        {
+            "title": "An Advanced Machine Learning Based Milk Adulteration System",
+            "applicationNumber": 202051401346,
+            "dateFiled": "13th April, 2020"
+        },
+        {
+            "title": "A Proficient Method for Categorical Data Clustering",
+            "applicationNumber": 202041035585,
+            "dateFiled": "18th August, 2020"
+        }
+    ],
+    "international": [
+        {
+            "title": "Rating prediction for Amazon: Amazon offers product recommendations based on Customer Activity Using Machine Learning Programming",
+            "applicationNumber": 2021106816,
+            "dateFiled": "24th November, 2021"
+        },
+        {
+            "title": "An Automatic door handle with sanitizer using Internet of Things and Artificial Intelligence Technologies for personal human care",
+            "applicationNumber": 2020102305,
+            "dateFiled": "07th December, 2020"
+        },
+        {
+            "title": "Intelligent Shopping Card by using Internet of Things (IoT), Artificial Intelligence (AI) and Machine Learning (ML) Technologies",
+            "applicationNumber": 2020103302,
+            "dateFiled": "14th October, 2020"
+        }
+    ]
+}
