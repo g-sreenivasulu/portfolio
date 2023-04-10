@@ -1,22 +1,23 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/hero-img.jpeg";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 import TimeLineElement from "./timeline.astro";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+  class="grid lg:grid-cols-2 place-items-center pt-2 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 md:block">
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
       widths={[200, 400, 600]}
-      aspectRatio="4:3"
-      sizes="(max-width: 800px) 100vw, 620px"
+      aspectRatio="1:1"
+      sizes="(max-width: 800px) 100vw, 480px"
       loading="eager"
       format="avif"
+      style={{ borderRadius: "2%" }}
     />
   </div>
   <div>
