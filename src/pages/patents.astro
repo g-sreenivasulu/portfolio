@@ -1,16 +1,45 @@
 ---
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import Layout from "@layouts/Layout.astro"
+import Layout from "@layouts/Layout.astro";
+import PatentCard from "@components/patent-card.astro";
 
+import patents from "@assets/patents.json";
+
+const nationalPatents = patents.national;
+const internationalPatents = patents.international;
 ---
 
 <Layout title="Patents">
-    <Container>
-        <Sectionhead>
-            <Fragment slot="title">Patents</Fragment>
-            <Fragment slot="desc"></Fragment>
-        </Sectionhead>
-        
-    </Container>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Patents</Fragment>
+      <Fragment slot="desc">
+        National and International Patents filed by Dr. G. Sreenivasulu, et al.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-4xl">
+      <h3 class="text-3xl font-semibold m-4 mt-8">National Patents</h3>
+      {
+        nationalPatents.map((patent) => (
+          <PatentCard
+            title={patent.title}
+            applicationNumber={patent.applicationNumber}
+            dateFiled={patent.dateFiled}
+          />
+        ))
+      }
+      <h3 class="text-3xl font-semibold m-4">International Patents</h3>
+      {
+        internationalPatents.map((patent) => (
+          <PatentCard
+            title={patent.title}
+            applicationNumber={patent.applicationNumber}
+            dateFiled={patent.dateFiled}
+          />
+        ))
+      }
+    </div>
+  </Container>
 </Layout>

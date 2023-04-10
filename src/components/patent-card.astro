@@ -1,0 +1,15 @@
+---
+export interface Props {
+  title: string;
+  applicationNumber: number;
+  dateFiled: string;
+}
+
+const { title, applicationNumber, dateFiled } = Astro.props;
+---
+
+<div class="m-4 p-4 border-2 rounded-lg">
+  <p class="font-medium mb-1">{title}</p>
+  <p class="my-1" >Application Number: {applicationNumber}</p>
+  <p class="mt-1">{dateFiled}</p>
+</div>
