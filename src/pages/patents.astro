@@ -19,28 +19,27 @@ const internationalPatents = patents.international;
       </Fragment>
     </Sectionhead>
 
-    <h3 class="text-3xl font-semibold m-4 mt-8">National Patents</h3>
-
-    {
-      nationalPatents.map((patent) => (
-        <PatentCard
-          title={patent.title}
-          applicationNumber={patent.applicationNumber}
-          dateFiled={patent.dateFiled}
-        />
-      ))
-    }
-
-    <h3 class="text-3xl font-semibold m-4">International Patents</h3>
-
-    {
-      internationalPatents.map((patent) => (
-        <PatentCard
-          title={patent.title}
-          applicationNumber={patent.applicationNumber}
-          dateFiled={patent.dateFiled}
-        />
-      ))
-    }
+    <div class="mx-auto max-w-4xl">
+      <h3 class="text-3xl font-semibold m-4 mt-8">National Patents</h3>
+      {
+        nationalPatents.map((patent) => (
+          <PatentCard
+            title={patent.title}
+            applicationNumber={patent.applicationNumber}
+            dateFiled={patent.dateFiled}
+          />
+        ))
+      }
+      <h3 class="text-3xl font-semibold m-4">International Patents</h3>
+      {
+        internationalPatents.map((patent) => (
+          <PatentCard
+            title={patent.title}
+            applicationNumber={patent.applicationNumber}
+            dateFiled={patent.dateFiled}
+          />
+        ))
+      }
+    </div>
   </Container>
 </Layout>
