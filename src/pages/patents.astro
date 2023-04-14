@@ -6,8 +6,8 @@ import PatentCard from "@components/patent-card.astro";
 
 import patents from "@data/patents.json";
 
-const nationalPatents = patents.national;
-const internationalPatents = patents.international;
+const nationalPatents = patents.national.sort((a, b) => new Date(b.dateFiled).valueOf() - new Date(a.dateFiled).valueOf());
+const internationalPatents = patents.international.sort((a, b) => new Date(b.dateFiled).valueOf() - new Date(a.dateFiled).valueOf());
 ---
 
 <Layout title="Patents">
