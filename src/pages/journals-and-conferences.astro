@@ -1,16 +1,20 @@
 ---
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import Layout from "@layouts/Layout.astro"
+import Layout from "@layouts/Layout.astro";
 
+import j_and_c from "@data/journals-and-conferences.json";
 ---
 
 <Layout title="Journals & Conferences">
-    <Container>
-        <Sectionhead>
-            <Fragment slot="title">Journals & Conferences</Fragment>
-            <Fragment slot="desc"></Fragment>
-        </Sectionhead>
-        
-    </Container>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Journals & Conferences</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-4xl mt-8">
+      {j_and_c.map((item) => <div class="m-4 p-4 border-2 rounded-lg">{item}</div>)}
+    </div>
+  </Container>
 </Layout>
