@@ -6,8 +6,14 @@ import PatentCard from "@components/patent-card.astro";
 
 import patents from "@data/patents.json";
 
-const nationalPatents = patents.national;
-const internationalPatents = patents.international;
+function compareDatesDesc(a: any, b: any) {
+  const dateA = new Date(a.dateFiled.replace(/(\d+)(st|nd|rd|th)/, '$1'));
+  const dateB = new Date(b.dateFiled.replace(/(\d+)(st|nd|rd|th)/, '$1'));
+  return dateB.valueOf() - dateA.valueOf();
+}
+
+const nationalPatents = patents.national.sort(compareDatesDesc);
+const internationalPatents = patents.international.sort(compareDatesDesc);
 ---
 
 <Layout title="Patents">
