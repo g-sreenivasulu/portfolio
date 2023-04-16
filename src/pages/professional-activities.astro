@@ -17,19 +17,19 @@ const professional = achievements.professional;
 
     <div class="mx-auto max-w-4xl">
       <h3 class="text-2xl sm:text-3xl font-semibold pb-2 mt-8">
-        Academic Achievements
-      </h3>
-
-      <ul class="list-disc pl-5">
-        {academic.map((value) => <li class="py-2">{value}</li>)}
-      </ul>
-
-      <h3 class="text-2xl sm:text-3xl font-semibold pb-2 mt-4">
         Professional Achievements
       </h3>
 
       <ul class="list-disc pl-5">
         {professional.map((value) => <li class="py-2">{value}</li>)}
+      </ul>
+
+      <h3 class="text-2xl sm:text-3xl font-semibold pb-2 mt-4">
+        Academic Achievements
+      </h3>
+
+      <ul class="list-disc pl-5">
+        {academic.map((value) => <li class="py-2">{value}</li>)}
       </ul>
     </div>
   </Container>
