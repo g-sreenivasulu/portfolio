@@ -5,8 +5,8 @@ import Layout from "@layouts/Layout.astro";
 
 import j_and_c from "@data/journals-and-conferences.json";
 
-const journals = j_and_c.journals;
-const conferences = j_and_c.conferences;
+const journals = [...j_and_c.journals].reverse();
+const conferences = [...j_and_c.conferences].reverse();
 ---
 
 <Layout title="Journals & Conferences">
