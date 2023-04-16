@@ -1,0 +1,36 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import achievements from "@data/achievements.json";
+
+const academic = achievements.academic;
+const professional = achievements.professional;
+---
+
+<Layout title="Achievements">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Achievements</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-semibold pb-2 mt-8">
+        Professional Achievements
+      </h2>
+
+      <ul class="list-disc pl-5">
+        {professional.map((value) => <li class="py-2">{value}</li>)}
+      </ul>
+
+      <h2 class="text-2xl sm:text-3xl font-semibold pb-2 mt-4">
+        Academic Achievements
+      </h2>
+
+      <ul class="list-disc pl-5">
+        {academic.map((value) => <li class="py-2">{value}</li>)}
+      </ul>
+    </div>
+  </Container>
+</Layout>
