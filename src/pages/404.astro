@@ -1,0 +1,22 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+
+---
+
+<Layout title="Page Not Found">
+    <Container>
+        <Sectionhead>
+            <Fragment slot="title">404</Fragment>
+            <Fragment slot="desc">Page Not Found</Fragment>
+        </Sectionhead>
+        
+        <main class="flex justify-center mt-8">
+            <a href="/" class="border-2 border-black rounded-lg p-2" aria-label="Back to Home Page" >
+                Back to Home
+            </a>
+        </main>
+
+    </Container>
+</Layout>
