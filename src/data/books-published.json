@@ -1,0 +1,10 @@
+{
+    "books": [
+        {
+            "title": "Data Analytics",
+            "description": "Et enim esse nisi sit laboris ipsum amet laboris ullamco sit labore laboris mollit ad.",
+            "cover_photo": "/books-published/data-analytics-cover.png",
+            "published_url": "https://amazon.in/"
+        }
+    ]
+}
