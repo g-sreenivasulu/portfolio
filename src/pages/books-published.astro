@@ -17,7 +17,7 @@ import { books } from "@data/books-published.json";
     </Sectionhead>
     <main class="flex justify-center mt-8 mx-auto max-w-5xl">
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        class="flex flex-wrap justify-center gap-8">
         {
           books.map((book) => (
             <div class="flex flex-col items-center justify-center border border-gray-400 border-opacity-50 rounded-lg p-4">
