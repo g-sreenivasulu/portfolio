@@ -3,14 +3,30 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro"
 
+import BookCard from "@components/book-card.astro";
+
+import { book_chapters } from "@data/book-chapters.json";
 ---
 
 <Layout title="Book Chapters">
     <Container>
         <Sectionhead>
             <Fragment slot="title">Book Chapters</Fragment>
-            <Fragment slot="desc"></Fragment>
+            <Fragment slot="desc">Book Chapters authored by Dr. G. Sreenivasulu</Fragment>
         </Sectionhead>
-        
+        <main class="flex justify-center mt-8 mx-auto max-w-5xl">
+            <div class="flex flex-wrap justify-center gap-8">
+              {
+                book_chapters.map((book) => (
+                  <BookCard
+                    title={book.title}
+                    description={book.description}
+                    cover_photo={book.cover_photo}
+                    published_url={book.published_url}
+                  />
+                ))
+              }
+            </div>
+          </main>
     </Container>
 </Layout>
