@@ -27,9 +27,9 @@ import { books } from "@data/books-published.json";
                 src={book.cover_photo}
                 alt={`${book.title}'s cover photo'`}
                 class:list={"w-56 rounded-lg shadow-sm"}
-                sizes={"250"} // TODO: add proper sizes 
+                sizes="(min-width: 768px) 187px, 224px"
                 aspectRatio={"3:4"}
-                widths={[188, 205, 224,]}
+                widths={[187, 224]}
                 format={"webp"}
                 loading={"eager"}
               />
