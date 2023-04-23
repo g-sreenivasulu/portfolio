@@ -2,7 +2,7 @@
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
-import { Picture } from "@astrojs/image/components";
+import BookCard from "@components/book-card.astro";
 
 import { books } from "@data/books-published.json";
 ---
@@ -16,28 +16,15 @@ import { books } from "@data/books-published.json";
       </Fragment>
     </Sectionhead>
     <main class="flex justify-center mt-8 mx-auto max-w-5xl">
-      <div
-        class="flex flex-wrap justify-center gap-8">
+      <div class="flex flex-wrap justify-center gap-8">
         {
           books.map((book) => (
-            <div class="flex flex-col items-center justify-center border border-gray-400 border-opacity-50 rounded-lg p-4">
-              <Picture
-                width={224}
-                height={299}
-                src={book.cover_photo}
-                alt={`${book.title}'s cover photo'`}
-                class:list={"w-56 rounded-lg shadow-sm"}
-                sizes="(min-width: 768px) 187px, 224px"
-                aspectRatio={"3:4"}
-                widths={[187, 224]}
-                format={"webp"}
-                loading={"eager"}
-              />
-              <p class="text-xl font-semibold self-center m-1 mt-2">
-                {book.title}
-              </p>
-              <p class="w-56 text-center">{book.description}</p>
-            </div>
+            <BookCard
+              title={book.title}
+              description={book.description}
+              cover_photo={book.cover_photo}
+              published_url={book.published_url}
+            />
           ))
         }
       </div>
