@@ -1,24 +1,39 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/hero-img.jpeg";
+import heroImage from "assets/heroImage.jpg";
+import square_heroImage from "assets/square_heroImage.jpeg"
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-2 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 md:block">
+  <div class="hidden sm:block md:pt-10 lg:pt-0 sm:pb-5 md:pb-0 md:order-1">
+    <Picture
+      width={380}
+      height={507}
+      src={heroImage}
+      alt="Dr. Sreenivasulu Gogula"
+      widths={[200, 400]}
+      aspectRatio="3:4"
+      sizes="(max-width: 800px) 100vw, 380px"
+      loading="eager"
+      format="webp"
+      class={"rounded-md"}
+    />
+  </div>
+  <div class="sm:hidden py-6 md:order-1">
     <Picture
       width={480}
       height={480}
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
+      src={square_heroImage}
+      alt="Dr. Sreenivasulu Gogula"
+      widths={[200, 400]}
       aspectRatio="1:1"
       sizes="(max-width: 800px) 100vw, 480px"
       loading="eager"
-      format="avif"
-      style={{ borderRadius: "2%" }}
+      format="webp"
+      class={"rounded-md"}
     />
   </div>
   <div>
