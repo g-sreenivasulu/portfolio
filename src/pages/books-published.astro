@@ -15,8 +15,8 @@ import { books } from "@data/books-published.json";
         Books Published by Dr. G. Sreenivasulu, et al.
       </Fragment>
     </Sectionhead>
-    <main class="flex justify-center mt-8 mx-auto max-w-5xl">
-      <div class="flex flex-wrap justify-center gap-8">
+    <main class="flex justify-center mt-8 mx-auto max-w-3xl">
+      <div class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
         {
           books.map((book) => (
             <BookCard
@@ -24,6 +24,7 @@ import { books } from "@data/books-published.json";
               description={book.description}
               cover_photo={book.cover_photo}
               published_url={book.published_url}
+              year_published={book.year_published}
             />
           ))
         }
