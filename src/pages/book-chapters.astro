@@ -14,15 +14,16 @@ import { book_chapters } from "@data/book-chapters.json";
             <Fragment slot="title">Book Chapters</Fragment>
             <Fragment slot="desc">Book Chapters authored by Dr. G. Sreenivasulu</Fragment>
         </Sectionhead>
-        <main class="flex justify-center mt-8 mx-auto max-w-5xl">
-            <div class="flex flex-wrap justify-center gap-8">
+        <main class="flex justify-center mt-8 mx-auto max-w-3xl">
+            <div class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
               {
-                book_chapters.map((book) => (
+                book_chapters.sort((b1, b2) => b2.year_published - b1.year_published).map((book) => (
                   <BookCard
                     title={book.title}
                     description={book.description}
                     cover_photo={book.cover_photo}
                     published_url={book.published_url}
+                    year_published={book.year_published}
                   />
                 ))
               }
