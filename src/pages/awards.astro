@@ -1,16 +1,29 @@
 ---
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import Layout from "@layouts/Layout.astro"
-
+import Layout from "@layouts/Layout.astro";
+import AwardCard from "@components/award-card.astro";
+import { awards } from "@data/awards.json";
 ---
 
 <Layout title="Awards">
-    <Container>
-        <Sectionhead>
-            <Fragment slot="title">Awards</Fragment>
-            <Fragment slot="desc"></Fragment>
-        </Sectionhead>
-        
-    </Container>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Awards</Fragment>
+      <Fragment slot="desc">Awards recived by Dr. G Sreenivasulu</Fragment>
+    </Sectionhead>
+
+    <main class="mt-4 flex flex-col items-center gap-8">
+      {
+        awards.map((award) => (
+          <AwardCard
+            title={award.title}
+            description={award.description}
+            date={award.date}
+            images={award.images}
+          />
+        ))
+      }
+    </main>
+  </Container>
 </Layout>
