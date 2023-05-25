@@ -1,0 +1,34 @@
+{
+    "resources": [
+        {
+            "title": "Machine Learning",
+            "cover_photo": "/resources/subject-name.jpg",
+            "url": "#"
+        },
+        {
+            "title": "Computer Networks",
+            "cover_photo": "/resources/subject-name.jpg",
+            "url": "#"
+        },
+        {
+            "title": "DevOps",
+            "cover_photo": "/resources/subject-name.jpg",
+            "url": "#"
+        },
+        {
+            "title": "DBMS",
+            "cover_photo": "/resources/subject-name.jpg",
+            "url": "#"
+        },
+        {
+            "title": "Data Mining",
+            "cover_photo": "/resources/subject-name.jpg",
+            "url": "#"
+        },
+        {
+            "title": "Deep Learning",
+            "cover_photo": "/resources/subject-name.jpg",
+            "url": "#"
+        }
+    ]
+}
