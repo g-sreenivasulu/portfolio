@@ -5,6 +5,8 @@ import Layout from "@layouts/Layout.astro";
 import BookCard from "@components/book-card.astro";
 
 import { books } from "@data/books-published.json";
+
+const books_published = [...books].sort((b1, b2) => b2.year_published - b1.year_published || books.indexOf(b2) - books.indexOf(b1))
 ---
 
 <Layout title="Books Published">
@@ -18,7 +20,7 @@ import { books } from "@data/books-published.json";
     <main class="flex justify-center mt-8 mx-auto max-w-3xl">
       <div class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
         {
-          books.sort((b1, b2) => b2.year_published - b1.year_published).map((book) => (
+          books_published.map((book) => (
             <BookCard
               title={book.title}
               description={book.description}
