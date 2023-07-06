@@ -13,6 +13,13 @@
             "cover_photo": "/books-published/web-and-social-media-analysis.jpeg",
             "published_url": "https://www.flipkart.com/web-social-media-analysis/p/itm43cba8ff7bcd0",
             "year_published": 2023
+        },
+        {
+            "title": "Fundamentals of Java Programming",
+            "description": "Et enim esse nisi sit laboris ipsum amet laboris ullamco sit labore laboris mollit ad.",
+            "cover_photo": "/books-published/fundamentals of java programming.avif",
+            "published_url": "#",
+            "year_published": 2023
         }
     ]
 }
