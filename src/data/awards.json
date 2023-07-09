@@ -1,9 +1,9 @@
 {
     "awards": [
         {
-            "title": "Lorem ipsum dolor",
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "date": "23rd December 2022",
+            "title": "Yuva Aacharya Award",
+            "description":"Recognizing exemplary contributors of research and education sector. Organized by Bharat Education Excellence (BEE)",
+            "date": "4th December 2022",
             "images": [
                 "/temp/img1.jpg",
                 "/temp/img2.jpeg",
@@ -11,23 +11,13 @@
             ]
         },
         {
-            "title": "Lorem ipsum dolor",
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "date": "23rd December 2022",
+            "title": "Global Teach Award",
+            "description":"For accomplishing excellence in educational services via occupational competence and exemplary work in the field of education. Organized by AKS Education, New Delhi",
+            "date": "6th November 2022",
             "images": [
                 "/temp/img2.jpeg",
-                "/temp/img3.jpeg",
+                "/temp/img3.jpeg", 
                 "/temp/img1.jpg"
-            ]
-        },
-        {
-            "title": "Lorem ipsum dolor",
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "date": "23rd December 2022",
-            "images": [
-                "/temp/img3.jpeg",
-                "/temp/img1.jpg",
-                "/temp/img2.jpeg"
             ]
         }
     ]
