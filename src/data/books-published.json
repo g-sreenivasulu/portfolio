@@ -2,21 +2,21 @@
     "books": [
         {
             "title": "Data Analytics",
-            "description": "Et enim esse nisi sit laboris ipsum amet laboris ullamco sit labore laboris mollit ad.",
+            "description": "This textbook is essential for aspiring data analysts, as it covers descriptive and predictive analytics across diverse types of data.",
             "cover_photo": "/books-published/data-analytics-cover.png",
             "published_url": "https://www.flipkart.com/data-analytics/p/itm19131590d9ac3",
             "year_published": 2022
         },
         {
             "title": "Web and Social Media Analysis",
-            "description": "Et enim esse nisi sit laboris ipsum amet laboris ullamco sit labore laboris mollit ad.",
+            "description": "This book focuses on web scraping, building analytical models over web data, and applying data analysis techniques to real-time applications.",
             "cover_photo": "/books-published/web-and-social-media-analysis.jpeg",
             "published_url": "https://www.flipkart.com/web-social-media-analysis/p/itm43cba8ff7bcd0",
             "year_published": 2023
         },
         {
             "title": "Fundamentals of Java Programming",
-            "description": "Et enim esse nisi sit laboris ipsum amet laboris ullamco sit labore laboris mollit ad.",
+            "description": "This textbook covers Java's Object-Oriented Paradigm, module programming, exceptions, and I/O with examples.",
             "cover_photo": "/books-published/fundamentals of java programming.avif",
             "published_url": "#",
             "year_published": 2023
