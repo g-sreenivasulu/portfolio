@@ -1,0 +1,45 @@
+---
+import { Picture } from "@astrojs/image/components";
+
+export interface Props {
+  title: string;
+  description: string;
+  cover_photo: string;
+  published_url: string;
+  year_published: number;
+}
+
+const { title, description, cover_photo, published_url, year_published } = Astro.props;
+---
+
+<a href={published_url} target="_blank" aria-label={title} class="w-full mx-4 rounded-lg hover:scale-[102%] transition ease-in-out duration-150">
+  <article class="mx-5 sm:mx-0 sm:flex sm:gap-10 items-center">
+    <div class="overflow-hidden rounded-lg sm:w-48">
+      <Picture
+        src={cover_photo}
+        alt={`${title}'s cover photo'`}
+        widths={[400, 600, 800, 1200]}
+        aspectRatio={5 / 7}
+        sizes="(max-width: 640px) 90vw, 192px"
+        loading="eager"
+        format={"webp"}
+        width={143}
+        height={200}
+        class="w-full sm:w-48"
+      />
+    </div>
+    <div class="w-full pt-6 sm:py-0">
+      <h3 class="mb-1 space-x-2 text-xl font-semibold">
+        {title}
+      </h3>
+      <div class="mb-2 flex flex-col gap-2 sm:flex-row sm:items-baseline">
+        <p class="space-x-0.5 text-sm">
+          <span class="text-zinc-800">Dr. G. Sreenivasulu</span>{" "}
+          <span>&middot;</span>
+          <span class="pr-0 sm:pr-2 text-zinc-800">{year_published}</span>
+        </p>
+      </div>
+      <p class="py-1 leading-relaxed">{`"${description}"`}</p>
+    </div>
+  </article>
+</a>
