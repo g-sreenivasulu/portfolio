@@ -29,9 +29,9 @@ const { title, description, cover_photo, published_url, year_published } = Astro
       />
     </div>
     <div class="w-full pt-6 sm:py-0">
-      <h3 class="mb-1 space-x-2 text-xl font-semibold">
+      <p class="mb-1 space-x-2 text-xl font-semibold">
         {title}
-      </h3>
+      </p>
       <div class="mb-2 flex flex-col gap-2 sm:flex-row sm:items-baseline">
         <p class="space-x-0.5 text-sm">
           <span class="text-zinc-800">Dr. G. Sreenivasulu</span>{" "}
@@ -39,7 +39,7 @@ const { title, description, cover_photo, published_url, year_published } = Astro
           <span class="pr-0 sm:pr-2 text-zinc-800">{year_published}</span>
         </p>
       </div>
-      <p class="py-1 leading-relaxed">{`"${description}"`}</p>
+      <p class="py-1 leading-relaxed">{`${description}`}</p>
     </div>
   </article>
 </a>
