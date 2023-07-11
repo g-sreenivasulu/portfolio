@@ -4,6 +4,7 @@ import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import AwardCard from "@components/award-card.astro";
 import { awards } from "@data/awards.json";
+import { compareDatesDesc } from "@utils/utils"
 ---
 
 <Layout title="Awards">
@@ -15,7 +16,7 @@ import { awards } from "@data/awards.json";
 
     <main class="mt-4 flex flex-col items-center gap-8">
       {
-        awards.map((award) => (
+        awards.sort((a1,a2) => compareDatesDesc(a1.date, a2.date)).map((award) => (
           <AwardCard
             title={award.title}
             description={award.description}
