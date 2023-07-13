@@ -10,10 +10,6 @@
     @apply bg-transparent rounded-md m-0.5;
 }
 
-#theme-list::-webkit-scrollbar-track{
-    @apply bg-transparent rounded-md;
-}
-
 ::-webkit-scrollbar-thumb{
     @apply bg-gray-500 rounded-md hover:bg-gray-700;
 }
