@@ -12,7 +12,7 @@ export interface Props {
 const { title, description, cover_photo, published_url, year_published } = Astro.props;
 ---
 
-<a href={published_url} target="_blank" aria-label={title} class="w-full mx-4 rounded-lg border-2 hover:scale-[102%] transition ease-linear duration-200">
+<a href={published_url} target="_blank" aria-label={title} class="justify-self-center w-full mx-4 rounded-lg border-2 hover:scale-[102%] transition ease-linear duration-200">
   <article class="m-3 sm:m-2 sm:flex sm:gap-9 items-center">
     <div class="overflow-hidden rounded-lg sm:w-48">
       <Picture
