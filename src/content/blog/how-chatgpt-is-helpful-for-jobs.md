@@ -3,7 +3,7 @@ draft: false
 title: "How ChatGPT is Helpful in Gaining More AI/ML Related Jobs"
 snippet: "ChatGPT, based on the GPT-3.5 architecture, is an advanced AI model that excels at natural language processing tasks. It has been trained on a vast amount of data and possesses the ability to generate human-like responses. This makes it an ideal resource for individuals seeking to enhance their AI and ML knowledge and skills."
 image: {
-    src: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?&fit=crop&w=430&h=240",
+    src: "/chatgpt-blog.png",
     alt: "frontend master"
 }
 publishDate: "2023-07-03 15:39"
