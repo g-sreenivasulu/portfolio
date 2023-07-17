@@ -1,30 +1,47 @@
----
-import { Icon } from "astro-icon";
----
+<footer class="bg-[#141414] py-12 mt-20">
+  <div class="container mx-auto lg:pl-28 flex justify-center">
+    <div class="flex flex-wrap justify-center w-full">
+      <div class="w-full md:w-1/4 mb-8 md:mb-0 px-4">
+        <p class="text-white text-lg mb-4 leading-tight">Dr. G. Sreenivasulu </p>
+        <button class="bg-white/95 hover:bg-white text-black font-semibold py-2 px-4 rounded">
+          <a href="/contact">Contact</a>
+        </button>
+      </div>
 
-<footer class="mt-20 mb-10">
+      <div class="w-full md:w-1/4 mb-8 md:mb-0 px-4">
+        <p class="text-white text-lg mb-4 leading-tight">Navigation</p>
+        <ul class="text-white/70 leading-loose">
+          <li><a href="/" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">About</a></li>
+          <li><a href="/awards" class="hover:text-white">Awards</a></li>
+          <li><a href="/blog" class="hover:text-white">Blog</a></li>
+          <li><a href="/achievements" class="hover:text-white">Achievements</a></li>
+          <li><a href="/journals-and-conferences" class="hover:text-white">Journals & Conferences</a></li>
+          <li><a href="/patents" class="hover:text-white">Patents</a></li>
+          <li><a href="/book-chapters" class="hover:text-white">Book Chapters</a></li>
+          <li><a href="/books-published" class="hover:text-white">Books Published</a></li>
+          <li><a href="#" class="hover:text-white">Resources</a></li>
+        </ul>
+      </div>
 
-  <div class="my-4 flex justify-center gap-3">
-    <a href="https://www.linkedin.com/in/dr-sreenivasulu/" target="_blank" aria-label="Dr G Sreenivasulu's Linkedin Profile">
-      <Icon pack="mdi" name="linkedin" class="h-8"/>
-    </a>
-
-    <a href="https://github.com/g-sreenivasulu/" target="_blank" aria-label="Dr G Sreenivasulu's Github Profile">
-      <Icon pack="mdi" name="github" class="h-8"/>
-    </a>
-
-    <a href="mailto:contact@sreenivasulu.com" aria-label="Dr G Sreenivasulu's Email">
-      <Icon pack="mdi" name="email" class="h-8"/>
-    </a>
-
-    <a href="https://www.facebook.com/sreenivasulu.gogula/" target="_blank" aria-label="Dr G Sreenivasulu's Facebook Profile">
-      <Icon pack="mdi" name="facebook" class="h-8"/>
-    </a> 
+      <div class="w-full md:w-1/4 mb-8 md:mb-0 px-4">
+        <p class="text-white text-lg mb-4 leading-tight">Socials</p>
+        <ul class="text-white/70 leading-loose">
+          <li><a target="_blank" href="https://www.linkedin.com/in/dr-sreenivasulu/" class="hover:text-white">LinkedIn</a></li>
+          <li><a target="_blank" href="https://github.com/g-sreenivasulu/" class="hover:text-white">GitHub</a></li>
+          <li><a href="mailto:contact@sreenivasulu.com" class="hover:text-white">Email</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/sreenivasulu.gogula/" class="hover:text-white">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="text-center mb-2"> 
-    <a class="text-sm text-slate-500 hover:underline" href="/terms">Terms</a>
+
+  <div class="text-center mb-2 mt-6"> 
+    <a class="text-white/70 hover:underline" href="/terms">Terms</a>
   </div>
-  <p class="text-center text-sm text-slate-500">
-    Copyright © {new Date().getFullYear()} Dr. G. Sreenivasulu
+
+  <p class="text-center text-sm text-white/80">
+    Copyright © {new Date().getFullYear()} Dr. Sreenivasulu Gogula
   </p>
+
 </footer>
