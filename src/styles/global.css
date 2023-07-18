@@ -6,12 +6,12 @@
     @apply w-1.5 h-1.5;
 }
 
-::-webkit-scrollbar-track{
-    @apply bg-transparent rounded-md m-0.5;
+::-webkit-scrollbar-track {
+    @apply bg-gradient-to-b from-base-200 to-base-300 m-2;
 }
 
-::-webkit-scrollbar-thumb{
-    @apply bg-gray-500 rounded-md hover:bg-gray-700;
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-500 hover:bg-gray-700;
 }
 
 body {
