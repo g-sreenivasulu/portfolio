@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
+import Link from "@components/ui/link.astro";
 
 // Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -51,12 +52,14 @@ const { Content } = await entry.render();
     <div class="mx-auto prose prose-lg mt-6">
         <Content />
     </div>
-    <div class="text-center mt-8">
-      <a
-        href="/blog"
-        class="bg-gray-100 px-5 py-3 rounded-md hover:bg-gray-200 transition"
-        >← Back to Blog</a
-      >
-    </div>
+    <Link
+      size="lg"
+      style="outline"
+      rel="noopener"
+      href="/blog"
+      class="w-fit mx-auto mt-10 flex gap-1 items-center justify-center"
+    >
+      ← Back to Blog
+    </Link>
   </Container>
 </Layout>
