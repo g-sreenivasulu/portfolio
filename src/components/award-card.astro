@@ -13,7 +13,7 @@ const { title, description, date, images } = Astro.props;
 
 <div
   id="award-gallery"
-  class="hidden md:w-4/5 lg:w-3/5 p-2 md:grid grid-cols-2 gap-4 rounded-2xl from-yellow-200 to-pink-300 bg-gradient-to-br">
+  class="hidden md:w-4/5 lg:w-3/5 p-2 md:grid grid-cols-2 gap-4 rounded-2xl from-accent/40 to-accent/30 bg-gradient-to-br">
   {
     images.map((image) => (
       <a
@@ -45,7 +45,7 @@ const { title, description, date, images } = Astro.props;
 
 <div
   id="award-gallery"
-  class="flex flex-col w-full md:hidden rounded-2xl from-yellow-200 to-pink-300 bg-gradient-to-br">
+  class="flex flex-col w-full md:hidden rounded-2xl from-accent/40 to-accent/30 bg-gradient-to-br">
   <div class="flex gap-x-6 my-2 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scroll-smooth">
     {
       images.map((image) => (
