@@ -1,0 +1,29 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import ResourceCard from "@components/resource-card.astro";
+import { resources } from "@data/resources.json";
+
+---
+
+<Layout title="Resources">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Resources</Fragment>
+      <Fragment slot="desc">
+        Resources by Dr. G. Sreenivasulu
+      </Fragment>
+    </Sectionhead>
+
+    <div class="flex justify-center mx-auto max-w-6xl space-y-2 py-5">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {
+          resources.map((resource) =>(
+            <ResourceCard title={resource.title} cover_photo={resource.cover_photo} url={resource.url} />
+          ))
+        }
+      </div>
+    </div>
+  </Container>
+</Layout>

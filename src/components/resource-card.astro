@@ -1,0 +1,27 @@
+---
+import { Picture } from "@astrojs/image/components";
+
+interface Props {
+  title: string;
+  cover_photo: string;
+  url: string;
+}
+const { title, cover_photo, url } = Astro.props;
+---
+
+<div>
+  <a target="_blank" href={url}>
+    <Picture
+      class="rounded-lg overflow-hidden hover:scale-[102%] transition ease-in-out duration-150"
+      src={cover_photo}
+      alt={title}
+      widths={[350]}
+      aspectRatio={"16:9"}
+      sizes="(max-width: 800px) 100vw, 350px"
+    />
+  </a>
+
+  <h3 class="text-center text-xl font-medium mt-2 pb-5">
+    {title}
+  </h3>
+</div>
