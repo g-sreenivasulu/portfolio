@@ -5,15 +5,10 @@ import Layout from "@layouts/Layout.astro";
 import PatentCard from "@components/patent-card.astro";
 
 import patents from "@data/patents.json";
+import { compareDatesDesc } from "@utils/utils";
 
-function compareDatesDesc(a: any, b: any) {
-  const dateA = new Date(a.dateFiled.replace(/(\d+)(st|nd|rd|th)/, '$1'));
-  const dateB = new Date(b.dateFiled.replace(/(\d+)(st|nd|rd|th)/, '$1'));
-  return dateB.valueOf() - dateA.valueOf();
-}
-
-const nationalPatents = patents.national.sort(compareDatesDesc);
-const internationalPatents = patents.international.sort(compareDatesDesc);
+const nationalPatents = patents.national.sort((a,b) => compareDatesDesc(a.dateFiled,b.dateFiled));
+const internationalPatents = patents.international.sort((a,b) => compareDatesDesc(a.dateFiled,b.dateFiled));
 ---
 
 <Layout title="Patents">

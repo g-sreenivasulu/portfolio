@@ -1,16 +1,36 @@
 ---
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import Layout from "@layouts/Layout.astro"
+import Layout from "@layouts/Layout.astro";
+import BookCard from "@components/book-card.astro";
 
+import { books } from "@data/books-published.json";
+
+const books_published = [...books].sort((b1, b2) => b2.year_published - b1.year_published || books.indexOf(b2) - books.indexOf(b1))
 ---
 
 <Layout title="Books Published">
-    <Container>
-        <Sectionhead>
-            <Fragment slot="title">Books Published</Fragment>
-            <Fragment slot="desc"></Fragment>
-        </Sectionhead>
-        
-    </Container>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Books Published</Fragment>
+      <Fragment slot="desc">
+        Books Published by Dr. G. Sreenivasulu, et al.
+      </Fragment>
+    </Sectionhead>
+    <main class="flex justify-center mt-8 mx-auto max-w-3xl">
+      <div class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
+        {
+          books_published.map((book) => (
+            <BookCard
+              title={book.title}
+              description={book.description}
+              cover_photo={book.cover_photo}
+              published_url={book.published_url}
+              year_published={book.year_published}
+            />
+          ))
+        }
+      </div>
+    </main>
+  </Container>
 </Layout>
