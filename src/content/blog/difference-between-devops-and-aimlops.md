@@ -9,7 +9,7 @@ image: {
 publishDate: "2023-02-03 16:39"
 category: "Technology"
 author: "Dr. G. Sreenivasulu"
-tags: [devops, aiml,]
+tags: [DevOps, ML]
 ---
 
 In the realm of software development and operations, two methodologies have gained significant traction in recent years: DevOps and MLOps. DevOps focuses on streamlining the collaboration between software developers and operations teams, while MLOps aims to enhance the deployment and management of Artificial Intelligence and Machine Learning models. While both methodologies share some similarities, there are also distinct differences that set them apart. In this article, we will explore the significant disparities between DevOps and MLOps.
