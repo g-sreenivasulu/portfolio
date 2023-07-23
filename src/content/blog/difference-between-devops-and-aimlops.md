@@ -3,7 +3,7 @@ draft: false
 title: "What Is a Significant Difference Between Dev Ops and AI/ML Ops"
 snippet: "DevOps, short for Development and Operations, is a software development approach that emphasizes collaboration, communication, and integration between developers and operations teams. The primary goal of DevOps is to enhance the efficiency and quality of software development by automating processes, enabling continuous integration and deployment, and fostering a culture of shared responsibility"
 image: {
-    src: "/blog/devops-aimlops-blog.png",
+    src: "/blog/devops-mlops-blog.png",
     alt: "data structures & algorithms"
 }
 publishDate: "2023-02-03 16:39"
