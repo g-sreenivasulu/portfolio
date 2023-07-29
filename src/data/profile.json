@@ -1,0 +1,56 @@
+{
+    "profilesection": "I am Dr. Sreenivasulu Gogula, an accomplished Professor and Head of the Department of CSE (Artificial Intelligence & Machine Learning) at ACE Engineering College, Hyderabad. With a Doctoral degree from JNTUH and a focus on Deep learning and Natural Language Processing, I am a renowned author and researcher in the field of Machine Learning and Deep Learning. I have filed more than 10 National patents and been granted 3 International Australian Patents, demonstrating my commitment to innovation and excellence.",
+    "education": [
+        {
+            "degree": "Postgraduate Diploma in Artificial Intelligence and Machine Learning",
+            "timespan": "2022 at University of Hyderabad (UoH), in Association with Applied Roots Pvt Ltd., Hyderabad"
+        },
+        {
+            "degree": "Doctor of Philosophy (PhD) in Computer Science and Engineering",
+            "timespan": "2019 at JNTUH, Hyderabad"
+        },
+        {
+            "degree": "M.Tech in Computer Science and Engineering",
+            "timespan": "2005 - 2007 at Sathayabama University, Chennai"
+        }
+    ],
+    "experience": [
+        {
+            "college": "Professor & Head of the Department of CSE (Artificial Intelligence and Machine Learning) at ACE Engineering College, Hyderabad",
+            "timespan": "February 2011 - Till date."
+        },
+        {
+            "college": "Associate Professor In the Department of CSE at Vardhaman College of Engineering, Hyderabad",
+            "timespan": "June 2008 - January 2011"
+        },
+        {
+            "college": "Asst.Professor (Sr.Grade) in the Department of Computer Science and Engineering at Vardhaman college of Engineering, Hyderabad",
+            "timespan": "June 2007 - May 2008"
+        },
+        {
+            "college": "Asst.Professor in the Department of Computer Science and Engineering at Priyadarshini college of Engineering, Nellore",
+            "timespan": "May 2004 - June 2005"
+        }
+    ],
+    "certificates": [
+        "Data Science for Engineers from IIT Chennai (IITM)",
+        "Database Management Systems from IIT, Chennai(IITM)",
+        "Deep Learning from IIT, Kharagpur (IITKGP)",
+        "Programming for Everybody (Getting started with Python)",
+        "AI for Everyone",
+        "Introduction to Data Science in Python"
+    ],
+    "subjects": [
+        "DevOps",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Associate Analytics",
+        "Computer Networks",
+        "Database Management Systems",
+        "Data Warehousing and Mining",
+        "Cryptography and Network Security",
+        "Data Communications",
+        "Wireless and Mobile networks",
+        "Object Oriented and Analysis of Algorithms"
+    ]
+}
