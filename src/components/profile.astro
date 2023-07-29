@@ -73,12 +73,7 @@ const subjects = profile.subjects;
     </div>
   
     <ul class="list-disc mx-6 mb-10 grid gap-2">
-      <li> Data Science for Engineers from IIT Chennai (IITM) </li>
-      <li> Database Management Systems from IIT, Chennai(IITM) </li>
-      <li> Deep Learning from IIT, Kharagpur (IITKGP) </li>
-      <li> Programming for Everybody (Getting started with Python) </li>
-      <li> AI for Everyone </li>
-      <li> Introduction to Data Science in Python </li>
+      {certificates.map((certificate) => <li>{certificate}</li> )}
     </ul>
   
     <div class="mb-5">
