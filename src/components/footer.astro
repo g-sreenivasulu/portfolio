@@ -1,3 +1,24 @@
+---
+const navigation = [
+  { title: "Home", path: "/" },
+  { title: "Awards", path: "/awards" },
+  { title: "Blog", path: "/blog" },
+  { title: "Achievements", path: "/achievements" },
+  { title: "Journals & Conferences", path: "/journals-and-conferences" },
+  { title: "Patents", path: "/patents" },
+  { title: "Book Chapters", path: "/book-chapters" },
+  { title: "Books Published", path: "/books-published" },
+  { title: "Resources", path: "/resources" },
+];
+
+const socials = [
+  { title: "Email", URL: "mailto:contact@sreenivasulu.com", target: "_self"},
+  { title: "LinkedIn", URL: "https://www.linkedin.com/in/dr-sreenivasulu/"},
+  { title: "Github", URL: "https://github.com/g-sreenivasulu/"},
+  { title: "Facebook", URL: "https://www.facebook.com/sreenivasulu.gogula/"},
+]
+---
+
 <footer class="bg-[#141414] py-12 mt-20">
   <div class="container mx-auto lg:pl-28 flex justify-center">
     <div class="flex flex-wrap justify-center w-full">
@@ -11,25 +32,28 @@
       <div class="w-full md:w-1/4 mb-8 md:mb-0 px-4">
         <p class="text-white text-lg mb-4 leading-tight">Navigation</p>
         <ul class="text-white/70 leading-loose">
-          <li><a href="/" class="hover:text-white">Home</a></li>
-          <li><a href="/awards" class="hover:text-white">Awards</a></li>
-          <li><a href="/blog" class="hover:text-white">Blog</a></li>
-          <li><a href="/achievements" class="hover:text-white">Achievements</a></li>
-          <li><a href="/journals-and-conferences" class="hover:text-white">Journals & Conferences</a></li>
-          <li><a href="/patents" class="hover:text-white">Patents</a></li>
-          <li><a href="/book-chapters" class="hover:text-white">Book Chapters</a></li>
-          <li><a href="/books-published" class="hover:text-white">Books Published</a></li>
-          <li><a href="/resources" class="hover:text-white">Resources</a></li>
+          {
+            navigation.map(({title, path}) => (
+              <li><a href={path} class="hover:text-white">{title}</a></li>
+            ))
+          }
         </ul>
       </div>
 
       <div class="w-full md:w-1/4 mb-8 md:mb-0 px-4">
         <p class="text-white text-lg mb-4 leading-tight">Socials</p>
         <ul class="text-white/70 leading-loose">
-          <li><a target="_blank" href="https://www.linkedin.com/in/dr-sreenivasulu/" class="hover:text-white">LinkedIn</a></li>
-          <li><a target="_blank" href="https://github.com/g-sreenivasulu/" class="hover:text-white">GitHub</a></li>
-          <li><a href="mailto:contact@sreenivasulu.com" class="hover:text-white">Email</a></li>
-          <li><a target="_blank" href="https://www.facebook.com/sreenivasulu.gogula/" class="hover:text-white">Facebook</a></li>
+          {
+            socials.map(({title, URL, target = "_blank"}) => (
+              <li>
+                <a
+                  target = {target}
+                  href={URL}
+                  class="hover:text-white">{title}
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </div>
     </div>
