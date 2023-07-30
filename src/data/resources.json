@@ -1,7 +1,7 @@
 {
     "resources": [
         {
-            "title": "Machine Learning",
+            "title": "ML",
             "cover_photo": "/resources/ml.png",
             "url": "https://drive.google.com/drive/folders/1VksGYMW3kVHGdm8p0X4pa2epOTUlgXFx?usp=drive_link"
         },
@@ -21,7 +21,7 @@
             "url": "https://drive.google.com/drive/folders/1-dv0Bk3OHGQlaRDArKX83QFkbL-RjJr4?usp=drive_link"
         },
         {
-            "title": "Computer Networks",
+            "title": "CN",
             "cover_photo": "/resources/cn.png",
             "url": "https://drive.google.com/drive/folders/1e4A17r-7UvejLQxpd8ZtYxO2fKuC_yRc?usp=drive_link"
         },
@@ -31,7 +31,7 @@
             "url": "https://drive.google.com/drive/folders/1HoqUVyXbVK-dDhf4sQhS9p3P7wGdqv6S?usp=drive_link"
         },
         {
-            "title": "Compiler Design",
+            "title": "CD",
             "cover_photo": "/resources/cd.png",
             "url": "https://drive.google.com/drive/folders/1InEN4PB8mG-QkX0nzLh-8CEl3frfuci_?usp=drive_link"
         },
