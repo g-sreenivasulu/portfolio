@@ -2,32 +2,47 @@
     "resources": [
         {
             "title": "Machine Learning",
-            "cover_photo": "/resources/subject-name.jpg",
+            "cover_photo": "/resources/ml.png",
             "url": "#"
         },
         {
-            "title": "Computer Networks",
-            "cover_photo": "/resources/subject-name.jpg",
+            "title": "NLP",
+            "cover_photo": "/resources/nlp.png",
             "url": "#"
         },
         {
             "title": "DevOps",
-            "cover_photo": "/resources/subject-name.jpg",
+            "cover_photo": "/resources/devops.png",
+            "url": "#"
+        },
+        {
+            "title": "DAA",
+            "cover_photo": "/resources/daa.png",
+            "url": "#"
+        },
+        {
+            "title": "Computer Networks",
+            "cover_photo": "/resources/cn.png",
             "url": "#"
         },
         {
             "title": "DBMS",
-            "cover_photo": "/resources/subject-name.jpg",
+            "cover_photo": "/resources/dbms.png",
             "url": "#"
         },
         {
-            "title": "Data Mining",
-            "cover_photo": "/resources/subject-name.jpg",
+            "title": "Compiler Design",
+            "cover_photo": "/resources/cd.png",
             "url": "#"
         },
         {
-            "title": "Deep Learning",
-            "cover_photo": "/resources/subject-name.jpg",
+            "title": "IDS",
+            "cover_photo": "/resources/ids.png",
+            "url": "#"
+        },
+        {
+            "title": "IRS",
+            "cover_photo": "/resources/irs.png",
             "url": "#"
         }
     ]
