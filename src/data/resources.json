@@ -3,47 +3,47 @@
         {
             "title": "Machine Learning",
             "cover_photo": "/resources/ml.png",
-            "url": "#"
+            "url": "https://drive.google.com/drive/folders/1VksGYMW3kVHGdm8p0X4pa2epOTUlgXFx?usp=drive_link"
         },
         {
             "title": "NLP",
             "cover_photo": "/resources/nlp.png",
-            "url": "#"
+            "url": "https://drive.google.com/drive/folders/1JvKWKdzWFQAmhfSYSu3ncB0dVfRCLyFa?usp=drive_link"
         },
         {
             "title": "DevOps",
             "cover_photo": "/resources/devops.png",
-            "url": "#"
+            "url": "https://drive.google.com/drive/folders/1aWP6Nrgkpb24mQQoj5nqCERlisFLgTFa?usp=drive_link"
         },
         {
             "title": "DAA",
             "cover_photo": "/resources/daa.png",
-            "url": "#"
+            "url": "https://drive.google.com/drive/folders/1-dv0Bk3OHGQlaRDArKX83QFkbL-RjJr4?usp=drive_link"
         },
         {
             "title": "Computer Networks",
             "cover_photo": "/resources/cn.png",
-            "url": "#"
+            "url": "https://drive.google.com/drive/folders/1e4A17r-7UvejLQxpd8ZtYxO2fKuC_yRc?usp=drive_link"
         },
         {
             "title": "DBMS",
             "cover_photo": "/resources/dbms.png",
-            "url": "#"
+            "url": "https://drive.google.com/drive/folders/1HoqUVyXbVK-dDhf4sQhS9p3P7wGdqv6S?usp=drive_link"
         },
         {
             "title": "Compiler Design",
             "cover_photo": "/resources/cd.png",
-            "url": "#"
+            "url": "https://drive.google.com/drive/folders/1InEN4PB8mG-QkX0nzLh-8CEl3frfuci_?usp=drive_link"
         },
         {
             "title": "IDS",
             "cover_photo": "/resources/ids.png",
-            "url": "#"
+            "url": "https://drive.google.com/drive/folders/1pqQw3zgV1Yo7z9PaIeJmuCHNAfPndVPJ?usp=drive_link"
         },
         {
             "title": "IRS",
             "cover_photo": "/resources/irs.png",
-            "url": "#"
+            "url": "https://drive.google.com/drive/folders/1BcPNTQKj_tY7SKetWEUxZVNMojXDLkrI?usp=drive_link"
         }
     ]
 }
