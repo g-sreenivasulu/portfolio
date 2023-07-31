@@ -6,7 +6,7 @@ import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 import profile from "@data/home.json" ;
 
-const about = profile.herosection;
+const heroText = profile.herosection;
 ---
 
 <main
@@ -45,7 +45,7 @@ const about = profile.herosection;
       Dr. Sreenivasulu Gogula
     </h1>
     <p class="text-base mt-4 max-w-xl">
-      {about}
+      {heroText}
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
