@@ -1,6 +1,6 @@
 ---
 import TimeLineElement from "./timeline.astro";
-import profile from "@data/profile.json" ;
+import profile from "@data/home.json" ;
 
 const biodata = profile.profilesection;
 const education = profile.education;
@@ -17,7 +17,22 @@ const subjects = profile.subjects;
     <div class="mb-10 mx-4 text-left">
       {biodata}
     </div>
-  
+    
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Experience</div>
+    </div>
+    
+    <div class="time-line-container grid gap-4 mb-10">
+      {
+        experience.map((experience) =>(
+          <TimeLineElement
+          title = {experience.college}
+          subtitle={experience.timespan}
+          />
+          ))
+        }
+    </div>
+
     <div class="mb-5">
       <div class="text-3xl w-full font-bold">Education</div>
     </div>
@@ -32,22 +47,7 @@ const subjects = profile.subjects;
         ))
       }
     </div>
-  
-    <div class="mb-5">
-      <div class="text-3xl w-full font-bold">Experience</div>
-    </div>
-  
-    <div class="time-line-container grid gap-4 mb-10">
-      {
-        experience.map((experience) =>(
-          <TimeLineElement
-            title = {experience.college}
-            subtitle={experience.timespan}
-          />
-        ))
-      }
-    </div>
-  
+    
     <div class="mb-5">
       <div class="text-3xl w-full font-bold">
         NPTEL & Coursera-AICTE Certifications

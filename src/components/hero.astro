@@ -4,6 +4,9 @@ import heroImage from "assets/heroImage.jpg";
 import square_heroImage from "assets/square_heroImage.jpeg"
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
+import profile from "@data/home.json" ;
+
+const heroText = profile.herosection;
 ---
 
 <main
@@ -42,12 +45,7 @@ import { Icon } from "astro-icon";
       Dr. Sreenivasulu Gogula
     </h1>
     <p class="text-base mt-4 max-w-xl">
-      A Professor and HOD-AIML in a reputed Educational Institution, Dedicated to advancing
-      the field of AI through innovative research, a focus on practical
-      applications, and a commitment to excellence. Specializes in AI and ML
-      with a focus on Deep Learning and Natural Language Processing.
-      Accomplished author and researcher with multiple National and
-      International patents.
+      {heroText}
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
