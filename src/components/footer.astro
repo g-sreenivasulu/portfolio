@@ -1,0 +1,76 @@
+---
+const navigation = [
+  { title: "Home", path: "/" },
+  { title: "Awards", path: "/awards" },
+  { title: "Blog", path: "/blog" },
+  { title: "Achievements", path: "/achievements" },
+  { title: "Journals & Conferences", path: "/journals-and-conferences" },
+  { title: "Patents", path: "/patents" },
+  { title: "Book Chapters", path: "/book-chapters" },
+  { title: "Books Published", path: "/books-published" },
+  { title: "Resources", path: "/resources" },
+];
+
+const socials = [
+  { title: "Email", URL: "mailto:contact@sreenivasulu.com", target: "_self"},
+  { title: "LinkedIn", URL: "https://www.linkedin.com/in/dr-sreenivasulu/"},
+  { title: "Github", URL: "https://github.com/g-sreenivasulu/"},
+  { title: "Facebook", URL: "https://www.facebook.com/sreenivasulu.gogula/"},
+]
+---
+
+<footer class="bg-[#141414] py-12 mt-20">
+  <div class="container mx-auto lg:pl-28 flex justify-center">
+    <div class="flex flex-wrap justify-center w-full">
+      <div class="w-full md:w-1/4 mb-8 md:mb-0 px-4">
+        <p class="text-white text-lg mb-4 leading-tight">Dr. G. Sreenivasulu </p>
+        <button class="bg-white/95 hover:bg-white text-black font-semibold py-2 px-4 rounded">
+          <a href="/contact">Contact</a>
+        </button>
+      </div>
+
+      <div class="w-full md:w-1/4 mb-8 md:mb-0 px-4">
+        <p class="text-white text-lg mb-4 leading-tight">Navigation</p>
+        <ul class="text-white/70 leading-loose">
+          {
+            navigation.map(({title, path}) => (
+              <li><a href={path} class="hover:text-white">{title}</a></li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="w-full md:w-1/4 mb-8 md:mb-0 px-4">
+        <p class="text-white text-lg mb-4 leading-tight">Socials</p>
+        <ul class="text-white/70 leading-loose">
+          {
+            socials.map(({title, URL, target = "_blank"}) => (
+              <li>
+                <a
+                  target = {target}
+                  href={URL}
+                  class="hover:text-white">{title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mb-2 mt-6"> 
+    <a class="text-white/70 hover:underline" href="/terms">Terms</a>
+  </div>
+
+  <p class="text-center text-sm text-white/80">
+    Copyright © {new Date().getFullYear()} Dr. Sreenivasulu Gogula
+  </p>
+
+  <p class="text-sm text-center text-white/80 pt-4">
+    built by 
+    <a href=`https://velopulent.com/` target="_blank" class="font-semibold bg-gradient-to-tl from-slate-400 via-violet-500 to-slate-400 bg-clip-text text-transparent" >
+      Velopulent
+    </a>
+  </p>
+</footer>

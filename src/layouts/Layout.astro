@@ -1,0 +1,59 @@
+---
+import { SEO } from "astro-seo";
+import Footer from "@components/footer.astro";
+import Navbar from "@components/navbar/navbar.astro";
+import "../styles/global.css";
+
+export interface Props {
+  title: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+
+const resolvedImageWithDomain = new URL(
+  "/opengraph.jpg",
+  Astro.site
+).toString();
+
+const { title } = Astro.props;
+
+const makeTitle = title ? title + " | Dr. Sreenivasulu Gogula" : "Dr. Sreenivasulu Gogula";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <SEO
+      title={makeTitle}
+      description="Portfolio website showcasing Dr. Sreenivasulu Gogula's Awards, Achievements, Patents, Journals, Conferences and Books."
+      canonical={canonicalURL}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: `Dr. Sreenivasulu Gogula's Professional Portfolio Website`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "Dr. Sreenivasulu Gogula's Professional Portfolio Website",
+        },
+      }}
+    />
+  </head>
+  <body>
+    <Navbar />
+    <div class="min-h-screen  text-base-content">
+      <slot />
+    </div>
+    <Footer />
+    <style is:global>
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
+</html>
