@@ -1,6 +1,6 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/heroImage.jpg";
+import heroImage from "assets/h1.jpg";
 import square_heroImage from "assets/square_heroImage.jpeg"
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
@@ -14,12 +14,12 @@ const heroText = profile.herosection;
   <div class="hidden sm:block md:pt-10 lg:pt-0 sm:pb-5 md:pb-0 md:order-1">
     <Picture
       width={380}
-      height={507}
+      height={570}
       src={heroImage}
       alt="Dr. Sreenivasulu Gogula"
-      widths={[200, 400]}
-      aspectRatio="3:4"
-      sizes="(max-width: 800px) 100vw, 380px"
+      widths={[400, 720]}
+      aspectRatio={2/3}
+      sizes="(max-width: 800px) 720px, 720px"
       loading="eager"
       format="webp"
       class={"rounded-md"}
@@ -27,13 +27,13 @@ const heroText = profile.herosection;
   </div>
   <div class="sm:hidden py-6 md:order-1">
     <Picture
-      width={480}
-      height={480}
+      width={500}
+      height={500}
       src={square_heroImage}
       alt="Dr. Sreenivasulu Gogula"
-      widths={[200, 400]}
+      widths={[200, 904]}
       aspectRatio="1:1"
-      sizes="(max-width: 800px) 100vw, 480px"
+      sizes="904px"
       loading="eager"
       format="webp"
       class={"rounded-md"}
