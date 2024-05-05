@@ -1,7 +1,6 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/h1.jpg";
-import square_heroImage from "assets/square_heroImage.jpeg"
+import heroImage from "assets/h1.jpeg";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 import profile from "@data/home.json" ;
@@ -13,12 +12,12 @@ const heroText = profile.herosection;
   class="grid lg:grid-cols-2 place-items-center pt-2 pb-8 md:pt-12 md:pb-24">
   <div class="hidden sm:block md:pt-10 lg:pt-0 sm:pb-5 md:pb-0 md:order-1">
     <Picture
-      width={380}
-      height={570}
+      width={960}
+      height={1017}
       src={heroImage}
       alt="Dr. Sreenivasulu Gogula"
       widths={[400, 720]}
-      aspectRatio={2/3}
+      aspectRatio={1/1}
       sizes="(max-width: 800px) 720px, 720px"
       loading="eager"
       format="webp"
@@ -29,7 +28,7 @@ const heroText = profile.herosection;
     <Picture
       width={500}
       height={500}
-      src={square_heroImage}
+      src={heroImage}
       alt="Dr. Sreenivasulu Gogula"
       widths={[200, 904]}
       aspectRatio="1:1"
