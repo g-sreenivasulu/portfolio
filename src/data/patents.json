@@ -1,60 +1,120 @@
 {
-    "national": [
-        {
-            "title": "Design Development Of Fault Diagnosis By Using Fuzzy Neural Networks For Hydroponic Systems In Iot Environment",
-            "applicationNumber": 201941048257,
-            "dateFiled": "26th November, 2019",
-            "granted": false
-        },
-        {
-            "title": "System and Method For Automatically Detecting Malaria",
-            "applicationNumber": 201941051401,
-            "dateFiled": "13th December, 2019",
-            "granted": false
-        },
-        {
-            "title": "SYSTEM AND METHOD FOR AUTOMATICALLY SUMMARIZING TEXT",
-            "applicationNumber": 202041001299,
-            "dateFiled": "11th January, 2020",
-            "granted": false
-        },
-        {
-            "title": "An Advanced Machine Learning Based Milk Adulteration System",
-            "applicationNumber": 202041004555,
-            "dateFiled": "13th April, 2020",
-            "granted": false
-        },
-        {
-            "title": "A Proficient Method for Categorical Data Clustering",
-            "applicationNumber": 202041035585,
-            "dateFiled": "18th August, 2020",
-            "granted": false
-        },
-        {
-            "title": "System for Detecting Parkinson's Disease and method thereof",
-            "applicationNumber": 202341033108,
-            "dateFiled": "10th May, 2023",
-            "granted": false
-        }
-    ],
-    "international": [
-        {
-            "title": "Rating prediction for Amazon: Amazon offers product recommendations based on Customer Activity Using Machine Learning Programming",
-            "applicationNumber": 2021106816,
-            "dateFiled": "24th November, 2021",
-            "granted": true
-        },
-        {
-            "title": "An Automatic door handle with sanitizer using Internet of Things and Artificial Intelligence Technologies for personal human care",
-            "applicationNumber": 2020102305,
-            "dateFiled": "07th December, 2020",
-            "granted": true
-        },
-        {
-            "title": "Intelligent Shopping Card by using Internet of Things (IoT), Artificial Intelligence (AI) and Machine Learning (ML) Technologies",
-            "applicationNumber": 2020103302,
-            "dateFiled": "14th October, 2020",
-            "granted": true
-        }
-    ]
+  "national": [
+    {
+      "title": "Design Development Of Fault Diagnosis By Using Fuzzy Neural Networks For Hydroponic Systems In Iot Environment",
+      "applicationNumber": 201941048257,
+      "dateFiled": "26th November, 2019",
+      "granted": false
+    },
+    {
+      "title": "System and Method For Automatically Detecting Malaria",
+      "applicationNumber": 201941051401,
+      "dateFiled": "13th December, 2019",
+      "granted": false
+    },
+    {
+      "title": "SYSTEM AND METHOD FOR AUTOMATICALLY SUMMARIZING TEXT",
+      "applicationNumber": 202041001299,
+      "dateFiled": "11th January, 2020",
+      "granted": false
+    },
+    {
+      "title": "An Advanced Machine Learning Based Milk Adulteration System",
+      "applicationNumber": 202041004555,
+      "dateFiled": "13th April, 2020",
+      "granted": false
+    },
+    {
+      "title": "A Proficient Method for Categorical Data Clustering",
+      "applicationNumber": 202041035585,
+      "dateFiled": "18th August, 2020",
+      "granted": false
+    },
+    {
+      "title": "System for Detecting Parkinson's Disease and method thereof",
+      "applicationNumber": 202341033108,
+      "dateFiled": "10th May, 2023",
+      "granted": false
+    },
+    {
+      "title": "AI based smart currency verifier",
+      "applicationNumber": "396600-001",
+      "dateFiled": "4th October, 2023",
+      "granted": true
+    },
+    {
+      "title": "Artificial Intelligence based Plant extract analyzing device to  Identify disease",
+      "applicationNumber": "396740-001",
+      "dateFiled": "5th October, 2023",
+      "granted": true
+    },
+    {
+      "title": "AI Based smart walking stick for  Visually Impaired",
+      "applicationNumber": "394224-001",
+      "dateFiled": "1st September, 2023",
+      "granted": false
+    },
+    {
+      "title": "Artificial Intelligence based Delivery Robotic Device",
+      "applicationNumber": "395181-001",
+      "dateFiled": "15th September, 2023",
+      "granted": false
+    },
+    {
+      "title": "IoT and AI Based Remote patient monitoring systems",
+      "applicationNumber": "202341076447",
+      "dateFiled": "8th November, 2023",
+      "granted": false
+    },
+    {
+      "title": "Machine Learning based fraud detection for financial transactions",
+      "applicationNumber": "202341058336",
+      "dateFiled": "31st August, 2023",
+      "granted": false
+    }
+  ],
+  "international": [
+    {
+      "title": "Rating prediction for Amazon: Amazon offers product recommendations based on Customer Activity Using Machine Learning Programming",
+      "applicationNumber": 2021106816,
+      "dateFiled": "24th November, 2021",
+      "granted": true
+    },
+    {
+      "title": "An Automatic door handle with sanitizer using Internet of Things and Artificial Intelligence Technologies for personal human care",
+      "applicationNumber": 2020102305,
+      "dateFiled": "07th December, 2020",
+      "granted": true
+    },
+    {
+      "title": "Intelligent Shopping Card by using Internet of Things (IoT), Artificial Intelligence (AI) and Machine Learning (ML) Technologies",
+      "applicationNumber": 2020103302,
+      "dateFiled": "14th October, 2020",
+      "granted": true
+    },
+    {
+      "title": "Artificial Intelligence Based Order Taking Device In Restaurants",
+      "applicationNumber": 6347194,
+      "dateFiled": "16th February, 2024",
+      "granted": true
+    },
+    {
+      "title": "Electronic Bank Device for Validating Handwritten Bank Cheques",
+      "applicationNumber": 6342954,
+      "dateFiled": "29th January, 2024",
+      "granted": true
+    },
+    {
+      "title": "Object Detection and Voice Assistance Glasses for the Blind",
+      "applicationNumber": 6342953,
+      "dateFiled": "29th January, 2024",
+      "granted": true
+    },
+    {
+      "title": "Artificial Intelligence Based Pest Capturing Agriculture Machine",
+      "applicationNumber": "395183-001",
+      "dateFiled": "15th September, 2023",
+      "granted": true
+    }
+  ]
 }
