@@ -4,7 +4,9 @@ import 'photoswipe/style.css';
 const lightbox = new PhotoSwipeLightbox({
     gallery: '#award-gallery',
     children: 'a',
-    pswpModule: () => import('photoswipe')
+    pswpModule: () => import('photoswipe'),
+    wheelToZoom: true,
+    closeOnVerticalDrag: true
 });
 
 lightbox.init();
