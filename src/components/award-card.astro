@@ -46,7 +46,8 @@ const { title, description, date, images } = Astro.props;
 <div
   id="award-gallery"
   class="flex flex-col w-full md:hidden rounded-2xl from-accent/40 to-accent/30 bg-gradient-to-br">
-  <div class="flex gap-x-6 my-2 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scroll-smooth">
+  <div
+    class="flex gap-x-6 my-2 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scroll-smooth">
     {
       images.map((image) => (
         <a
@@ -78,4 +79,8 @@ const { title, description, date, images } = Astro.props;
   </div>
 </div>
 
-<script src="../utils/photo-swipe.js"></script>
+<style is:inline>
+  .pswp__img {
+    object-fit: cover;
+  }
+</style>
