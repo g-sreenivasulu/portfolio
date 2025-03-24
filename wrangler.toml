@@ -1,0 +1,7 @@
+name = "portfolio-dty"
+pages_build_output_dir = "./dist"
+compatibility_date = "2025-03-24"
+
+[vars]
+BUN_VERSION = "1.2.5"
+NODE_VERSION = "22.12.0"
