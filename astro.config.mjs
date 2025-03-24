@@ -1,17 +1,20 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import image from "@astrojs/image";
+import icon from "astro-icon";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineConfig({
   site: "https://sreenivasulu.com",
-  integrations: [
-    tailwind(),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
-    }),
-    mdx(),
-    sitemap(),
-  ],
+
+  integrations: [icon(), mdx(), sitemap()],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
+  devToolbar: {
+    enabled: false,
+  },
 });
