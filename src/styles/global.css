@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 
@@ -13,8 +13,8 @@
   --color-base-content: #291334;
 
   --font-sans:
-    Poppins, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    Poppins, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /*
@@ -35,30 +35,30 @@
   }
 }
 
-.time-line-container>div:last-child .education__time>.education__line {
-    display: none;
+.time-line-container > div:last-child .education__time > .education__line {
+  display: none;
 }
 
 ::-webkit-scrollbar {
-    @apply w-1.5 h-1.5;
+  @apply h-1.5 w-1.5;
 }
 
-::-webkit-scrollbar-track{
-    @apply bg-transparent rounded-md m-0.5;
+::-webkit-scrollbar-track {
+  @apply m-0.5 rounded-md bg-transparent;
 }
 
-::-webkit-scrollbar-thumb{
-    @apply bg-gray-500 rounded-md hover:bg-gray-700;
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-gray-500 hover:bg-gray-700;
 }
 
 body {
-    @apply bg-base-100
+  @apply bg-base-100;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #000;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #000;
 }

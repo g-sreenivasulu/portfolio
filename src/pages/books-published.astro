@@ -10,7 +10,7 @@ const booksPublished = await getCollection("booksPublished");
 booksPublished.sort(
   (b1, b2) =>
     b2.data.yearPublished - b1.data.yearPublished ||
-    booksPublished.indexOf(b2) - booksPublished.indexOf(b1)
+    booksPublished.indexOf(b2) - booksPublished.indexOf(b1),
 );
 ---
 

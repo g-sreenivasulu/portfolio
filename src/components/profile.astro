@@ -1,6 +1,6 @@
 ---
 import TimeLineElement from "./timeline.astro";
-import profile from "@data/home.json" ;
+import profile from "@data/home.json";
 
 const bioData = profile.profileSection;
 const education = profile.education;
@@ -10,60 +10,59 @@ const subjects = profile.subjects;
 ---
 
 <div>
-    <div class="mb-5">
-      <div class="text-3xl w-full font-bold">Profile</div>
-    </div>
-  
-    <div class="mb-10 mx-4 text-left">
-      {bioData}
-    </div>
-    
-    <div class="mb-5">
-      <div class="text-3xl w-full font-bold">Experience</div>
-    </div>
-    
-    <div class="time-line-container grid gap-4 mb-10">
-      {
-        experience.map((experience) =>(
-          <TimeLineElement
-          title = {experience.college}
-          subtitle={experience.timeSpan}
-          />
-          ))
-        }
-    </div>
-
-    <div class="mb-5">
-      <div class="text-3xl w-full font-bold">Education</div>
-    </div>
-  
-    <div class="time-line-container grid gap-4 mb-10">
-      {
-        education.map((education) =>(
-          <TimeLineElement
-            title = {education.degree}
-            subtitle={education.timeSpan}
-          />
-        ))
-      }
-    </div>
-    
-    <div class="mb-5">
-      <div class="text-3xl w-full font-bold">
-        NPTEL & Coursera-AICTE Certifications
-      </div>
-    </div>
-  
-    <ul class="list-disc mx-6 mb-10 grid gap-2">
-      {certificates.map((certificate) => <li>{certificate}</li> )}
-    </ul>
-  
-    <div class="mb-5">
-      <div class="text-3xl w-full font-bold">Subjects Taught</div>
-    </div>
-  
-    <ul class="list-disc mx-6 mb-10 grid gap-2">
-      {subjects.map((subject) => <li>{subject}</li> )}
-    </ul>
+  <div class="mb-5">
+    <div class="w-full text-3xl font-bold">Profile</div>
   </div>
-  
+
+  <div class="mx-4 mb-10 text-left">
+    {bioData}
+  </div>
+
+  <div class="mb-5">
+    <div class="w-full text-3xl font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10 grid gap-4">
+    {
+      experience.map((experience) => (
+        <TimeLineElement
+          title={experience.college}
+          subtitle={experience.timeSpan}
+        />
+      ))
+    }
+  </div>
+
+  <div class="mb-5">
+    <div class="w-full text-3xl font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container mb-10 grid gap-4">
+    {
+      education.map((education) => (
+        <TimeLineElement
+          title={education.degree}
+          subtitle={education.timeSpan}
+        />
+      ))
+    }
+  </div>
+
+  <div class="mb-5">
+    <div class="w-full text-3xl font-bold">
+      NPTEL & Coursera-AICTE Certifications
+    </div>
+  </div>
+
+  <ul class="mx-6 mb-10 grid list-disc gap-2">
+    {certificates.map((certificate) => <li>{certificate}</li>)}
+  </ul>
+
+  <div class="mb-5">
+    <div class="w-full text-3xl font-bold">Subjects Taught</div>
+  </div>
+
+  <ul class="mx-6 mb-10 grid list-disc gap-2">
+    {subjects.map((subject) => <li>{subject}</li>)}
+  </ul>
+</div>

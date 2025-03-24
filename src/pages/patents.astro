@@ -10,13 +10,13 @@ import { getCollection } from "astro:content";
 const nationalPatents = await getCollection("nationalPatents");
 
 nationalPatents.sort((a, b) =>
-  compareDatesDesc(a.data.dateFiled, b.data.dateFiled)
+  compareDatesDesc(a.data.dateFiled, b.data.dateFiled),
 );
 
 const internationalPatents = await getCollection("internationalPatents");
 
 internationalPatents.sort((a, b) =>
-  compareDatesDesc(a.data.dateFiled, b.data.dateFiled)
+  compareDatesDesc(a.data.dateFiled, b.data.dateFiled),
 );
 ---
 
