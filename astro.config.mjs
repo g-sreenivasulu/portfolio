@@ -8,6 +8,10 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: "https://sreenivasulu.com",
 
+  prefetch: {
+    prefetchAll: true,
+  },
+
   integrations: [icon(), mdx(), sitemap()],
 
   vite: {
