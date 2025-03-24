@@ -3,8 +3,12 @@ import Container from "@components/container.astro";
 import SectionHead from "@components/section-head.astro";
 import Layout from "@layouts/Layout.astro";
 import AwardCard from "@components/award-card.astro";
-import { awards } from "@data/awards.json";
-import { compareDatesDesc } from "@utils/utils"
+import { compareDatesDesc } from "@utils/utils";
+import { getCollection } from "astro:content";
+
+const awards = await getCollection("awards");
+
+awards.sort((a1, a2) => compareDatesDesc(a1.data.date, a2.data.date));
 ---
 
 <Layout title="Awards">
@@ -15,16 +19,7 @@ import { compareDatesDesc } from "@utils/utils"
     </SectionHead>
 
     <main class="mt-4 flex flex-col items-center gap-8">
-      {
-        awards.sort((a1,a2) => compareDatesDesc(a1.date, a2.date)).map((award) => (
-          <AwardCard
-            title={award.title}
-            description={award.description}
-            date={award.date}
-            images={award.images}
-          />
-        ))
-      }
+      {awards.map((award) => <AwardCard {award} />)}
     </main>
   </Container>
 </Layout>

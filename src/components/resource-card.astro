@@ -1,19 +1,19 @@
 ---
 import { Picture } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  title: string;
-  cover_photo: string;
-  url: string;
+  resource: CollectionEntry<"resources">;
 }
-const { title, cover_photo, url } = Astro.props;
+const { resource } = Astro.props;
+const { title, coverPhoto, url } = resource.data;
 ---
 
 <div>
   <a target="_blank" href={url}>
     <Picture
       class="aspect-video overflow-hidden rounded-lg transition duration-150 ease-in-out hover:scale-[102%]"
-      src={cover_photo}
+      src={coverPhoto}
       alt={title}
       height={197}
       width={350}

@@ -1,31 +1,34 @@
 ---
 import { Picture } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
 
 export interface Props {
-  title: string;
-  description: string;
-  cover_photo: string;
-  published_url: string;
-  year_published: number;
+  book: CollectionEntry<"booksPublished" | "bookChapters">;
 }
 
-const { title, description, cover_photo, published_url, year_published } = Astro.props;
+const { book } = Astro.props;
+const { title, description, coverPhoto, publishedURL, yearPublished } =
+  book.data;
 ---
 
-<a href={published_url} target="_blank" aria-label={title} class="justify-self-center w-full mx-4 rounded-lg border-2 hover:scale-[102%] transition ease-linear duration-200">
-  <article class="m-3 sm:m-2 sm:flex sm:gap-9 items-center">
+<a
+  href={publishedURL}
+  target="_blank"
+  aria-label={title}
+  class="mx-4 w-full justify-self-center rounded-lg border-2 transition duration-200 ease-linear hover:scale-[102%]"
+>
+  <article class="m-3 items-center sm:m-2 sm:flex sm:gap-9">
     <div class="overflow-hidden rounded-lg sm:w-48">
       <Picture
-        src={cover_photo}
+        src={coverPhoto}
         alt={`${title}'s cover photo'`}
         widths={[400, 600, 800, 1200]}
-        aspectRatio={3 / 4}
         sizes="(max-width: 640px) 90vw, 192px"
         loading="eager"
-        format={"webp"}
+        format={"avif"}
         width={143}
         height={200}
-        class="w-full sm:w-48"
+        class="aspect-[3/4] w-full sm:w-48"
       />
     </div>
     <div class="w-full pt-6 sm:py-0">
@@ -36,7 +39,7 @@ const { title, description, cover_photo, published_url, year_published } = Astro
         <p class="space-x-0.5 text-sm">
           <span class="text-zinc-800">Dr. G. Sreenivasulu</span>{" "}
           <span>&middot;</span>
-          <span class="pr-0 sm:pr-2 text-zinc-800">{year_published}</span>
+          <span class="pr-0 text-zinc-800 sm:pr-2">{yearPublished}</span>
         </p>
       </div>
       <p class="py-1 leading-relaxed">{`${description}`}</p>

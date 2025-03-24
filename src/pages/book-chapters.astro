@@ -1,33 +1,30 @@
 ---
 import Container from "@components/container.astro";
 import SectionHead from "@components/section-head.astro";
-import Layout from "@layouts/Layout.astro"
+import Layout from "@layouts/Layout.astro";
 
 import BookCard from "@components/book-card.astro";
+import { getCollection } from "astro:content";
 
-import { book_chapters } from "@data/book-chapters.json";
+const bookChapters = await getCollection("bookChapters");
+
+bookChapters.sort((b1, b2) => b2.data.yearPublished - b1.data.yearPublished);
 ---
 
 <Layout title="Book Chapters">
-    <Container>
-        <SectionHead>
-            <Fragment slot="title">Book Chapters</Fragment>
-            <Fragment slot="desc">Book Chapters authored by Dr. G. Sreenivasulu</Fragment>
-        </SectionHead>
-        <main class="flex justify-center mt-8 mx-auto max-w-3xl">
-            <div class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
-              {
-                book_chapters.sort((b1, b2) => b2.year_published - b1.year_published).map((book) => (
-                  <BookCard
-                    title={book.title}
-                    description={book.description}
-                    cover_photo={book.cover_photo}
-                    published_url={book.published_url}
-                    year_published={book.year_published}
-                  />
-                ))
-              }
-            </div>
-          </main>
-    </Container>
+  <Container>
+    <SectionHead>
+      <Fragment slot="title">Book Chapters</Fragment>
+      <Fragment slot="desc"
+        >Book Chapters authored by Dr. G. Sreenivasulu</Fragment
+      >
+    </SectionHead>
+    <main class="mx-auto mt-8 flex max-w-3xl justify-center">
+      <div
+        class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start"
+      >
+        {bookChapters.map((book) => <BookCard {book} />)}
+      </div>
+    </main>
+  </Container>
 </Layout>

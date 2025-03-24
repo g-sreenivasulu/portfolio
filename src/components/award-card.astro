@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  title: string;
-  description: string;
-  date: string;
-  images: string[];
+  award: CollectionEntry<"awards">;
 }
 
-const { title, description, date, images } = Astro.props;
+const { award } = Astro.props;
+
+const { title, description, date, images } = award.data;
 ---
 
 <div
@@ -18,7 +18,7 @@ const { title, description, date, images } = Astro.props;
   {
     images.map((image) => (
       <a
-        href={image}
+        href={image.src}
         data-pswp-width="1024"
         data-pswp-height="576"
         target="_blank"
@@ -54,7 +54,7 @@ const { title, description, date, images } = Astro.props;
       images.map((image) => (
         <a
           class="w-full flex-none snap-center snap-always"
-          href={image}
+          href={image.src}
           data-pswp-width="900"
           data-pswp-height="506"
           data-cropped="true"
