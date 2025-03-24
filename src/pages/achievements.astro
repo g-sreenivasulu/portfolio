@@ -1,6 +1,6 @@
 ---
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import SectionHead from "@components/section-head.astro";
 import Layout from "@layouts/Layout.astro";
 import achievements from "@data/achievements.json";
 
@@ -10,10 +10,10 @@ const professional = achievements.professional;
 
 <Layout title="Achievements">
   <Container>
-    <Sectionhead>
+    <SectionHead>
       <Fragment slot="title">Achievements</Fragment>
       <Fragment slot="desc">Professional & Academic Achievements of Dr. G. Sreenivasulu</Fragment>
-    </Sectionhead>
+    </SectionHead>
 
     <div class="mx-auto max-w-4xl">
       <h2 class="text-2xl sm:text-3xl font-semibold pb-2 mt-8">

@@ -1,6 +1,6 @@
 ---
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import SectionHead from "@components/section-head.astro";
 import Layout from "@layouts/Layout.astro";
 import PatentCard from "@components/patent-card.astro";
 
@@ -13,12 +13,12 @@ const internationalPatents = patents.international.sort((a,b) => compareDatesDes
 
 <Layout title="Patents">
   <Container>
-    <Sectionhead>
+    <SectionHead>
       <Fragment slot="title">Patents</Fragment>
       <Fragment slot="desc">
         National and International Patents filed by Dr. G. Sreenivasulu, et al.
       </Fragment>
-    </Sectionhead>
+    </SectionHead>
 
     <div class="mx-auto max-w-4xl">
       <h2 class="text-3xl font-semibold m-4 mt-8">National Patents</h2>

@@ -1,6 +1,6 @@
 ---
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import SectionHead from "@components/section-head.astro";
 import Layout from "@layouts/Layout.astro"
 
 import BookCard from "@components/book-card.astro";
@@ -10,10 +10,10 @@ import { book_chapters } from "@data/book-chapters.json";
 
 <Layout title="Book Chapters">
     <Container>
-        <Sectionhead>
+        <SectionHead>
             <Fragment slot="title">Book Chapters</Fragment>
             <Fragment slot="desc">Book Chapters authored by Dr. G. Sreenivasulu</Fragment>
-        </Sectionhead>
+        </SectionHead>
         <main class="flex justify-center mt-8 mx-auto max-w-3xl">
             <div class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
               {

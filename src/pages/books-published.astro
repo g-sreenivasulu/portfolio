@@ -1,6 +1,6 @@
 ---
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import SectionHead from "@components/section-head.astro";
 import Layout from "@layouts/Layout.astro";
 import BookCard from "@components/book-card.astro";
 
@@ -11,12 +11,12 @@ const books_published = [...books].sort((b1, b2) => b2.year_published - b1.year_
 
 <Layout title="Books Published">
   <Container>
-    <Sectionhead>
+    <SectionHead>
       <Fragment slot="title">Books Published</Fragment>
       <Fragment slot="desc">
         Books Published by Dr. G. Sreenivasulu, et al.
       </Fragment>
-    </Sectionhead>
+    </SectionHead>
     <main class="flex justify-center mt-8 mx-auto max-w-3xl">
       <div class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
         {

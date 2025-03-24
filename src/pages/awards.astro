@@ -1,6 +1,6 @@
 ---
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import SectionHead from "@components/section-head.astro";
 import Layout from "@layouts/Layout.astro";
 import AwardCard from "@components/award-card.astro";
 import { awards } from "@data/awards.json";
@@ -9,10 +9,10 @@ import { compareDatesDesc } from "@utils/utils"
 
 <Layout title="Awards">
   <Container>
-    <Sectionhead>
+    <SectionHead>
       <Fragment slot="title">Awards</Fragment>
       <Fragment slot="desc">Awards received by Dr. G. Sreenivasulu</Fragment>
-    </Sectionhead>
+    </SectionHead>
 
     <main class="mt-4 flex flex-col items-center gap-8">
       {
