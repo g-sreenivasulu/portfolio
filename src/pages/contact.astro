@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import SectionHead from "@components/section-head.astro";
@@ -22,21 +22,21 @@ import ContactForm from "@components/contactform.astro";
         </p>
         <div class="mt-5">
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-500 w-4 h-4" name="uil:map-marker" />
+            <Icon class="text-gray-500 size-4" name="uil:map-marker" />
             <span>Hyderabad, India</span>
           </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-500 w-4 h-4" name="uil:envelope" /><a
+            <Icon class="text-gray-500 size-4" name="uil:envelope" /><a
               href="mailto:contact@sreenivasulu.com">contact@sreenivasulu.com</a
             >
           </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-500 w-4 h-4" name="uil:linkedin" /><a
+            <Icon class="text-gray-500 size-4" name="uil:linkedin" /><a
               target="_blank"
               href="https://www.linkedin.com/in/g-sreenivasulu/">in/g-sreenivasulu</a>
           </div>
         </div>
       </div>
       <div>
-        <Contactform />
+        <ContactForm />
       </div>
     </div>
   </Container>
