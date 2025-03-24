@@ -6,5 +6,13 @@
     "coverPhoto": "assets/book-chapters/IoT-and-Big-Data-analytics-for-smart-cities.jpg",
     "publishedURL": "https://www.amazon.com.au/IoT-Data-Analytics-Smart-Cities/dp/103210855X",
     "yearPublished": 2022
+  },
+  {
+    "id": "Exploring AI and Machine Learning Integration in Medical Assistive Robotics: An Experimental Approach",
+    "title": "Exploring AI and Machine Learning Integration in Medical Assistive Robotics: An Experimental Approach",
+    "description": "Dolor nostrud non aliquip aliquip qui quis voluptate enim eiusmod dolor. Dolor nostrud non aliquip aliquip qui quis voluptate enim eiusmod dolor.",
+    "coverPhoto": "assets/book-chapters/IoT-and-Big-Data-analytics-for-smart-cities.jpg",
+    "publishedURL": "#",
+    "yearPublished": 2024
   }
 ]
