@@ -1,118 +1,137 @@
 {
   "national": [
     {
-      "title": "Design Development Of Fault Diagnosis By Using Fuzzy Neural Networks For Hydroponic Systems In Iot Environment",
+      "id": 201941048257,
       "applicationNumber": 201941048257,
+      "title": "Design Development Of Fault Diagnosis By Using Fuzzy Neural Networks For Hydroponic Systems In Iot Environment",
       "dateFiled": "26th November, 2019",
       "granted": false
     },
     {
-      "title": "System and Method For Automatically Detecting Malaria",
+      "id": 201941051401,
       "applicationNumber": 201941051401,
+      "title": "System and Method For Automatically Detecting Malaria",
       "dateFiled": "13th December, 2019",
       "granted": false
     },
     {
-      "title": "SYSTEM AND METHOD FOR AUTOMATICALLY SUMMARIZING TEXT",
+      "id": 202041001299,
       "applicationNumber": 202041001299,
+      "title": "SYSTEM AND METHOD FOR AUTOMATICALLY SUMMARIZING TEXT",
       "dateFiled": "11th January, 2020",
       "granted": false
     },
     {
-      "title": "An Advanced Machine Learning Based Milk Adulteration System",
+      "id": 202041004555,
       "applicationNumber": 202041004555,
+      "title": "An Advanced Machine Learning Based Milk Adulteration System",
       "dateFiled": "13th April, 2020",
       "granted": false
     },
     {
-      "title": "A Proficient Method for Categorical Data Clustering",
+      "id": 202041035585,
       "applicationNumber": 202041035585,
+      "title": "A Proficient Method for Categorical Data Clustering",
       "dateFiled": "18th August, 2020",
       "granted": false
     },
     {
-      "title": "System for Detecting Parkinson's Disease and method thereof",
+      "id": 202341033108,
       "applicationNumber": 202341033108,
+      "title": "System for Detecting Parkinson's Disease and method thereof",
       "dateFiled": "10th May, 2023",
       "granted": false
     },
     {
-      "title": "AI based smart currency verifier",
+      "id": "396600-001",
       "applicationNumber": "396600-001",
+      "title": "AI based smart currency verifier",
       "dateFiled": "4th October, 2023",
       "granted": true
     },
     {
-      "title": "Artificial Intelligence based Plant extract analyzing device to  Identify disease",
+      "id": "396740-001",
       "applicationNumber": "396740-001",
+      "title": "Artificial Intelligence based Plant extract analyzing device to  Identify disease",
       "dateFiled": "5th October, 2023",
       "granted": true
     },
     {
-      "title": "AI Based smart walking stick for  Visually Impaired",
+      "id": "394224-001",
       "applicationNumber": "394224-001",
+      "title": "AI Based smart walking stick for  Visually Impaired",
       "dateFiled": "1st September, 2023",
       "granted": false
     },
     {
-      "title": "Artificial Intelligence based Delivery Robotic Device",
+      "id": "395181-001",
       "applicationNumber": "395181-001",
+      "title": "Artificial Intelligence based Delivery Robotic Device",
       "dateFiled": "15th September, 2023",
       "granted": false
     },
     {
-      "title": "IoT and AI Based Remote patient monitoring systems",
+      "id": "202341076447",
       "applicationNumber": "202341076447",
+      "title": "IoT and AI Based Remote patient monitoring systems",
       "dateFiled": "8th November, 2023",
       "granted": false
     },
     {
-      "title": "Machine Learning based fraud detection for financial transactions",
+      "id": "202341058336",
       "applicationNumber": "202341058336",
+      "title": "Machine Learning based fraud detection for financial transactions",
       "dateFiled": "31st August, 2023",
       "granted": false
     }
   ],
   "international": [
     {
-      "title": "Rating prediction for Amazon: Amazon offers product recommendations based on Customer Activity Using Machine Learning Programming",
+      "id": 2021106816,
       "applicationNumber": 2021106816,
+      "title": "Rating prediction for Amazon: Amazon offers product recommendations based on Customer Activity Using Machine Learning Programming",
       "dateFiled": "24th November, 2021",
       "granted": true
     },
     {
-      "title": "An Automatic door handle with sanitizer using Internet of Things and Artificial Intelligence Technologies for personal human care",
+      "id": 2020102305,
       "applicationNumber": 2020102305,
+      "title": "An Automatic door handle with sanitizer using Internet of Things and Artificial Intelligence Technologies for personal human care",
       "dateFiled": "07th December, 2020",
       "granted": true
     },
     {
-      "title": "Intelligent Shopping Card by using Internet of Things (IoT), Artificial Intelligence (AI) and Machine Learning (ML) Technologies",
+      "id": 2020103302,
       "applicationNumber": 2020103302,
+      "title": "Intelligent Shopping Card by using Internet of Things (IoT), Artificial Intelligence (AI) and Machine Learning (ML) Technologies",
       "dateFiled": "14th October, 2020",
       "granted": true
     },
     {
-      "title": "Artificial Intelligence Based Order Taking Device In Restaurants",
+      "id": 6347194,
       "applicationNumber": 6347194,
+      "title": "Artificial Intelligence Based Order Taking Device In Restaurants",
       "dateFiled": "16th February, 2024",
       "granted": true
     },
     {
-      "title": "Electronic Bank Device for Validating Handwritten Bank Cheques",
+      "id": 6342954,
       "applicationNumber": 6342954,
+      "title": "Electronic Bank Device for Validating Handwritten Bank Cheques",
       "dateFiled": "29th January, 2024",
       "granted": true
     },
     {
-      "title": "Object Detection and Voice Assistance Glasses for the Blind",
+      "id": 6342953,
       "applicationNumber": 6342953,
+      "title": "Object Detection and Voice Assistance Glasses for the Blind",
       "dateFiled": "29th January, 2024",
       "granted": true
     },
     {
-      "title": "Artificial Intelligence Based Pest Capturing Agriculture Machine",
+      "id": "395183-001",
       "applicationNumber": "395183-001",
+      "title": "Artificial Intelligence Based Pest Capturing Agriculture Machine",
       "dateFiled": "15th September, 2023",
       "granted": true
     }

@@ -1,11 +1,10 @@
-{
-    "book_chapters": [
-        {
-            "title": "IoT and Big Data Analytics for Smart Cities",
-            "description": "This book highlights the benefits of Big Data and IoT methods for smart systems in smart cities. It blends research contributions and real-world applications in this field.",
-            "cover_photo": "/book-chapters/IoT-and-Big-Data-analytics-for-smart-cities.jpg",
-            "published_url": "https://www.amazon.com.au/IoT-Data-Analytics-Smart-Cities/dp/103210855X",
-            "year_published": 2022
-        }
-    ]
-}
+[
+  {
+    "id": "IoT and Big Data Analytics for Smart Cities",
+    "title": "IoT and Big Data Analytics for Smart Cities",
+    "description": "This book highlights the benefits of Big Data and IoT methods for smart systems in smart cities. It blends research contributions and real-world applications in this field.",
+    "coverPhoto": "assets/book-chapters/IoT-and-Big-Data-analytics-for-smart-cities.jpg",
+    "publishedURL": "https://www.amazon.com.au/IoT-Data-Analytics-Smart-Cities/dp/103210855X",
+    "yearPublished": 2022
+  }
+]

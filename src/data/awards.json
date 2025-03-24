@@ -1,34 +1,35 @@
-{
-  "awards": [
-    {
-      "title": "Yuva Aacharya Award",
-      "description": "Recognizing exemplary contributors of research and education sector. Organized by Bharat Education Excellence (BEE)",
-      "date": "4th December 2022",
-      "images": [
-        "/awards/yuva-aacharya-award/1.jpeg",
-        "/awards/yuva-aacharya-award/2.jpeg",
-        "/awards/yuva-aacharya-award/3.jpeg"
-      ]
-    },
-    {
-      "title": "Global Teach Award",
-      "description": "For accomplishing excellence in educational services via occupational competence and exemplary work in the field of education. Organized by AKS Education, New Delhi",
-      "date": "6th November 2022",
-      "images": [
-        "/awards/global-teacher-award/1.jpeg",
-        "/awards/global-teacher-award/2.jpeg",
-        "/awards/global-teacher-award/3.jpeg"
-      ]
-    },
-    {
-      "title": "Jyeshta Aacharya Award",
-      "description": "For demonstrating excellence in teaching different subjects, showing outstanding contribution to learners and serving the community through teaching even outside formal classrooms. Organized by Bharat Education Excellence (BEE)",
-      "date": "21st April 2024",
-      "images": [
-        "/awards/jyeshta-aacharya-award/1.jpeg",
-        "/awards/jyeshta-aacharya-award/2.jpeg",
-        "/awards/jyeshta-aacharya-award/3.jpeg"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "Yuva Aacharya Award",
+    "title": "Yuva Aacharya Award",
+    "description": "Recognizing exemplary contributors of research and education sector. Organized by Bharat Education Excellence (BEE)",
+    "date": "4th December 2022",
+    "images": [
+      "assets/awards/yuva-aacharya-award/1.jpeg",
+      "assets/awards/yuva-aacharya-award/2.jpeg",
+      "assets/awards/yuva-aacharya-award/3.jpeg"
+    ]
+  },
+  {
+    "id": "Global Teach Award",
+    "title": "Global Teach Award",
+    "description": "For accomplishing excellence in educational services via occupational competence and exemplary work in the field of education. Organized by AKS Education, New Delhi",
+    "date": "6th November 2022",
+    "images": [
+      "assets/awards/global-teacher-award/1.jpeg",
+      "assets/awards/global-teacher-award/2.jpeg",
+      "assets/awards/global-teacher-award/3.jpeg"
+    ]
+  },
+  {
+    "id": "Jyeshta Aacharya Award",
+    "title": "Jyeshta Aacharya Award",
+    "description": "For demonstrating excellence in teaching different subjects, showing outstanding contribution to learners and serving the community through teaching even outside formal classrooms. Organized by Bharat Education Excellence (BEE)",
+    "date": "21st April 2024",
+    "images": [
+      "assets/awards/jyeshta-aacharya-award/1.jpeg",
+      "assets/awards/jyeshta-aacharya-award/2.jpeg",
+      "assets/awards/jyeshta-aacharya-award/3.jpeg"
+    ]
+  }
+]
