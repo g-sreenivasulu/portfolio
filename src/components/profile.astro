@@ -2,7 +2,7 @@
 import TimeLineElement from "./timeline.astro";
 import profile from "@data/home.json" ;
 
-const biodata = profile.profilesection;
+const bioData = profile.profileSection;
 const education = profile.education;
 const experience = profile.experience;
 const certificates = profile.certificates;
@@ -15,7 +15,7 @@ const subjects = profile.subjects;
     </div>
   
     <div class="mb-10 mx-4 text-left">
-      {biodata}
+      {bioData}
     </div>
     
     <div class="mb-5">
@@ -27,7 +27,7 @@ const subjects = profile.subjects;
         experience.map((experience) =>(
           <TimeLineElement
           title = {experience.college}
-          subtitle={experience.timespan}
+          subtitle={experience.timeSpan}
           />
           ))
         }
@@ -42,7 +42,7 @@ const subjects = profile.subjects;
         education.map((education) =>(
           <TimeLineElement
             title = {education.degree}
-            subtitle={education.timespan}
+            subtitle={education.timeSpan}
           />
         ))
       }
