@@ -1,29 +1,28 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Picture } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  title: string;
-  cover_photo: string;
-  url: string;
+  resource: CollectionEntry<"resources">;
 }
-const { title, cover_photo, url } = Astro.props;
+const { resource } = Astro.props;
+const { title, coverPhoto, url } = resource.data;
 ---
 
 <div>
   <a target="_blank" href={url}>
     <Picture
-      class="rounded-lg overflow-hidden hover:scale-[102%] transition ease-in-out duration-150"
-      src={cover_photo}
+      class="aspect-video overflow-hidden rounded-lg transition duration-150 ease-in-out hover:scale-[102%]"
+      src={coverPhoto}
       alt={title}
       height={197}
       width={350}
       widths={[350]}
-      aspectRatio={"16:9"}
       sizes="(max-width: 800px) 100vw, 350px"
     />
   </a>
 
-  <p class="text-center text-xl font-medium mt-2 pb-5">
+  <p class="mt-2 pb-5 text-center text-xl font-medium">
     {title}
   </p>
 </div>

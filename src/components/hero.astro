@@ -1,60 +1,56 @@
 ---
-import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/h1.jpeg";
+import { Image } from "astro:assets";
+import heroImage from "../assets/h1.jpeg";
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon";
-import profile from "@data/home.json" ;
+import { Icon } from "astro-icon/components";
+import { heroSection } from "@data/home.json";
 
-const heroText = profile.herosection;
+const heroText = heroSection;
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-2 pb-8 md:pt-12 md:pb-24">
-  <div class="hidden sm:block md:pt-10 lg:pt-0 sm:pb-5 md:pb-0 md:order-1">
-    <Picture
+  class="grid place-items-center pt-2 pb-8 md:pt-12 md:pb-24 lg:grid-cols-2"
+>
+  <div class="hidden sm:block sm:pb-5 md:order-1 md:pt-10 md:pb-0 lg:pt-0">
+    <Image
       width={400}
       height={400}
       src={heroImage}
-      alt="Dr. Sreenivasulu Gogula"
-      widths={[400, 720]}
-      aspectRatio={1/1}
-      sizes="(max-width: 800px) 720px, 720px"
-      loading="eager"
       format="webp"
-      class={"rounded-md"}
+      loading={"eager"}
+      alt="Dr. Sreenivasulu Gogula"
+      class={"rounded-md aspect-square object-cover"}
     />
   </div>
-  <div class="sm:hidden py-6 md:order-1">
-    <Picture
+  <div class="py-6 sm:hidden md:order-1">
+    <Image
       width={500}
       height={500}
       src={heroImage}
       alt="Dr. Sreenivasulu Gogula"
-      widths={[200, 904]}
-      aspectRatio="1:1"
-      sizes="904px"
       loading="eager"
       format="webp"
-      class={"rounded-md"}
+      class={"rounded-md aspect-square object-cover"}
     />
   </div>
   <div>
     <h1
-      class="text-2xl md:text-5xl font-bold lg:tracking-tight xl:tracking-tighter">
+      class="text-2xl font-bold md:text-5xl lg:tracking-tight xl:tracking-tighter"
+    >
       Dr. Sreenivasulu Gogula
     </h1>
-    <p class="text-base mt-4 max-w-xl">
+    <p class="mt-4 max-w-xl text-base">
       {heroText}
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+    <div class="mt-6 flex flex-col gap-3 sm:flex-row">
       <Link
         size="lg"
         style="outline"
         rel="noopener"
         href="/journals-and-conferences"
-        class="flex gap-1 items-center justify-center"
-        >
-        <Icon pack="mdi" name="book" class="h-5"/>
+        class="flex items-center justify-center gap-1"
+      >
+        <Icon name="mdi:book" class="size-5" />
         Journals & Conferences
       </Link>
       <Link
@@ -62,22 +58,21 @@ const heroText = profile.herosection;
         style="outline"
         rel="noopener"
         href="/patents"
-        class="flex gap-1 items-center justify-center"
-        >
-        <Icon pack="mdi" name="certificate" class="h-5"/>
+        class="flex items-center justify-center gap-1"
+      >
+        <Icon name="mdi:certificate" class="size-5" />
         Patents
       </Link>
       <Link
-      size="lg"
-      style="outline"
-      href="https://scholar.google.com/citations?user=LI_W3n4AAAAJ&hl=en"
-      target="_blank"
-      class="flex gap-1 items-center justify-center"
+        size="lg"
+        style="outline"
+        href="https://scholar.google.com/citations?user=LI_W3n4AAAAJ&hl=en"
+        target="_blank"
+        class="flex items-center justify-center gap-1"
       >
-      Google Scholar
-      <Icon pack="mdi" name="open-in-new" class="h-5"/>
-    </Link>
+        Google Scholar
+        <Icon name="mdi:open-in-new" class="size-5" />
+      </Link>
     </div>
   </div>
 </main>
-

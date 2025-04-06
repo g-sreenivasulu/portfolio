@@ -1,35 +1,32 @@
 ---
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import SectionHead from "@components/section-head.astro";
 import Layout from "@layouts/Layout.astro";
 import BookCard from "@components/book-card.astro";
+import { getCollection } from "astro:content";
 
-import { books } from "@data/books-published.json";
+const booksPublished = await getCollection("booksPublished");
 
-const books_published = [...books].sort((b1, b2) => b2.year_published - b1.year_published || books.indexOf(b2) - books.indexOf(b1))
+booksPublished.sort(
+  (b1, b2) =>
+    b2.data.yearPublished - b1.data.yearPublished ||
+    booksPublished.indexOf(b2) - booksPublished.indexOf(b1),
+);
 ---
 
 <Layout title="Books Published">
   <Container>
-    <Sectionhead>
+    <SectionHead>
       <Fragment slot="title">Books Published</Fragment>
       <Fragment slot="desc">
         Books Published by Dr. G. Sreenivasulu, et al.
       </Fragment>
-    </Sectionhead>
-    <main class="flex justify-center mt-8 mx-auto max-w-3xl">
-      <div class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
-        {
-          books_published.map((book) => (
-            <BookCard
-              title={book.title}
-              description={book.description}
-              cover_photo={book.cover_photo}
-              published_url={book.published_url}
-              year_published={book.year_published}
-            />
-          ))
-        }
+    </SectionHead>
+    <main class="mx-auto mt-8 flex max-w-3xl justify-center">
+      <div
+        class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start"
+      >
+        {booksPublished.map((book) => <BookCard {book} />)}
       </div>
     </main>
   </Container>

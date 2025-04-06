@@ -1,27 +1,64 @@
-.time-line-container>div:last-child .education__time>.education__line {
-    display: none;
+@import "tailwindcss";
+
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --color-primary: #65c3c8;
+  --color-secondary: #ef9fbc;
+  --color-accent: #eeaf3a;
+  --color-neutral: #291334;
+  --color-base-100: #faf7f5;
+  --color-base-200: #efeae6;
+  --color-base-300: #e7e2df;
+  --color-base-content: #291334;
+
+  --font-sans:
+    Poppins, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+.time-line-container > div:last-child .education__time > .education__line {
+  display: none;
 }
 
 ::-webkit-scrollbar {
-    @apply w-1.5 h-1.5;
+  @apply h-1.5 w-1.5;
 }
 
-::-webkit-scrollbar-track{
-    @apply bg-transparent rounded-md m-0.5;
+::-webkit-scrollbar-track {
+  @apply m-0.5 rounded-md bg-transparent;
 }
 
-::-webkit-scrollbar-thumb{
-    @apply bg-gray-500 rounded-md hover:bg-gray-700;
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-gray-500 hover:bg-gray-700;
 }
 
 body {
-    @apply bg-base-100
+  @apply bg-base-100;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #000;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #000;
 }

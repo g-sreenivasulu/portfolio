@@ -1,16 +1,20 @@
 ---
+import type { CollectionEntry } from "astro:content";
+
 export interface Props {
-  title: string;
-  applicationNumber: number;
-  dateFiled: string;
-  granted: boolean;
+  patent: CollectionEntry<"nationalPatents" | "internationalPatents">;
 }
 
-const { title, applicationNumber, dateFiled, granted } = Astro.props;
+const { patent } = Astro.props;
+
+const { title, applicationNumber, dateFiled, granted } = patent.data;
 ---
 
-<div class="m-4 p-4 border-2 rounded-lg">
-  <p class="font-medium mb-1">{title}</p>
-  <p class="my-1" >Application Number: {applicationNumber} {granted && <span> (Granted) </span>}</p>
+<div class="m-4 rounded-lg border-2 p-4">
+  <p class="mb-1 font-medium">{title}</p>
+  <p class="my-1">
+    Application Number: {applicationNumber}
+    {granted && <span> (Granted) </span>}
+  </p>
   <p class="mt-1">{dateFiled}</p>
 </div>

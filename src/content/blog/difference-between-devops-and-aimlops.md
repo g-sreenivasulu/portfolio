@@ -2,10 +2,7 @@
 draft: false
 title: "What Is a Significant Difference Between DevOps and MLOps"
 snippet: "DevOps, short for Development and Operations, is a software development approach that emphasizes collaboration, communication, and integration between developers and operations teams. The primary goal of DevOps is to enhance the efficiency and quality of software development by automating processes, enabling continuous integration and deployment, and fostering a culture of shared responsibility"
-image: {
-    src: "/blog/devops-mlops-blog.png",
-    alt: "data structures & algorithms"
-}
+image: "assets/blog/devops-mlops-blog.png"
 publishDate: "2023-02-03 16:39"
 category: "Technology"
 author: "Dr. G. Sreenivasulu"

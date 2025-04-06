@@ -1,28 +1,23 @@
 ---
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import SectionHead from "@components/section-head.astro";
 import Layout from "@layouts/Layout.astro";
 import ResourceCard from "@components/resource-card.astro";
-import { resources } from "@data/resources.json";
+import { getCollection } from "astro:content";
 
+const resources = await getCollection("resources");
 ---
 
 <Layout title="Resources">
   <Container>
-    <Sectionhead>
+    <SectionHead>
       <Fragment slot="title">Resources</Fragment>
-      <Fragment slot="desc">
-        Resources by Dr. G. Sreenivasulu
-      </Fragment>
-    </Sectionhead>
+      <Fragment slot="desc"> Resources by Dr. G. Sreenivasulu </Fragment>
+    </SectionHead>
 
-    <div class="flex justify-center mx-auto max-w-6xl space-y-2 py-5">
+    <div class="mx-auto flex max-w-6xl justify-center space-y-2 py-5">
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {
-          resources.map((resource) =>(
-            <ResourceCard title={resource.title} cover_photo={resource.cover_photo} url={resource.url} />
-          ))
-        }
+        {resources.map((resource) => <ResourceCard {resource} />)}
       </div>
     </div>
   </Container>

@@ -1,49 +1,56 @@
-{
-    "resources": [
-        {
-            "title": "ML",
-            "cover_photo": "/resources/ml.avif",
-            "url": "https://drive.google.com/drive/folders/1VksGYMW3kVHGdm8p0X4pa2epOTUlgXFx?usp=drive_link"
-        },
-        {
-            "title": "NLP",
-            "cover_photo": "/resources/nlp.avif",
-            "url": "https://drive.google.com/drive/folders/1JvKWKdzWFQAmhfSYSu3ncB0dVfRCLyFa?usp=drive_link"
-        },
-        {
-            "title": "DevOps",
-            "cover_photo": "/resources/devops.avif",
-            "url": "https://drive.google.com/drive/folders/1aWP6Nrgkpb24mQQoj5nqCERlisFLgTFa?usp=drive_link"
-        },
-        {
-            "title": "DAA",
-            "cover_photo": "/resources/daa.avif",
-            "url": "https://drive.google.com/drive/folders/1-dv0Bk3OHGQlaRDArKX83QFkbL-RjJr4?usp=drive_link"
-        },
-        {
-            "title": "CN",
-            "cover_photo": "/resources/cn.avif",
-            "url": "https://drive.google.com/drive/folders/1e4A17r-7UvejLQxpd8ZtYxO2fKuC_yRc?usp=drive_link"
-        },
-        {
-            "title": "DBMS",
-            "cover_photo": "/resources/dbms.avif",
-            "url": "https://drive.google.com/drive/folders/1HoqUVyXbVK-dDhf4sQhS9p3P7wGdqv6S?usp=drive_link"
-        },
-        {
-            "title": "CD",
-            "cover_photo": "/resources/cd.avif",
-            "url": "https://drive.google.com/drive/folders/1InEN4PB8mG-QkX0nzLh-8CEl3frfuci_?usp=drive_link"
-        },
-        {
-            "title": "IDS",
-            "cover_photo": "/resources/ids.avif",
-            "url": "https://drive.google.com/drive/folders/1pqQw3zgV1Yo7z9PaIeJmuCHNAfPndVPJ?usp=drive_link"
-        },
-        {
-            "title": "IRS",
-            "cover_photo": "/resources/irs.avif",
-            "url": "https://drive.google.com/drive/folders/1BcPNTQKj_tY7SKetWEUxZVNMojXDLkrI?usp=drive_link"
-        }
-    ]
-}
+[
+  {
+    "id": "ML",
+    "title": "ML",
+    "coverPhoto": "assets/resources/ml.avif",
+    "url": "https://drive.google.com/drive/folders/1VksGYMW3kVHGdm8p0X4pa2epOTUlgXFx?usp=drive_link"
+  },
+  {
+    "id": "NLP",
+    "title": "NLP",
+    "coverPhoto": "assets/resources/nlp.avif",
+    "url": "https://drive.google.com/drive/folders/1JvKWKdzWFQAmhfSYSu3ncB0dVfRCLyFa?usp=drive_link"
+  },
+  {
+    "id": "DevOps",
+    "title": "DevOps",
+    "coverPhoto": "assets/resources/devops.avif",
+    "url": "https://drive.google.com/drive/folders/1aWP6Nrgkpb24mQQoj5nqCERlisFLgTFa?usp=drive_link"
+  },
+  {
+    "id": "DAA",
+    "title": "DAA",
+    "coverPhoto": "assets/resources/daa.avif",
+    "url": "https://drive.google.com/drive/folders/1-dv0Bk3OHGQlaRDArKX83QFkbL-RjJr4?usp=drive_link"
+  },
+  {
+    "id": "CN",
+    "title": "CN",
+    "coverPhoto": "assets/resources/cn.avif",
+    "url": "https://drive.google.com/drive/folders/1e4A17r-7UvejLQxpd8ZtYxO2fKuC_yRc?usp=drive_link"
+  },
+  {
+    "id": "DBMS",
+    "title": "DBMS",
+    "coverPhoto": "assets/resources/dbms.avif",
+    "url": "https://drive.google.com/drive/folders/1HoqUVyXbVK-dDhf4sQhS9p3P7wGdqv6S?usp=drive_link"
+  },
+  {
+    "id": "CD",
+    "title": "CD",
+    "coverPhoto": "assets/resources/cd.avif",
+    "url": "https://drive.google.com/drive/folders/1InEN4PB8mG-QkX0nzLh-8CEl3frfuci_?usp=drive_link"
+  },
+  {
+    "id": "IDS",
+    "title": "IDS",
+    "coverPhoto": "assets/resources/ids.avif",
+    "url": "https://drive.google.com/drive/folders/1pqQw3zgV1Yo7z9PaIeJmuCHNAfPndVPJ?usp=drive_link"
+  },
+  {
+    "id": "IRS",
+    "title": "IRS",
+    "coverPhoto": "assets/resources/irs.avif",
+    "url": "https://drive.google.com/drive/folders/1BcPNTQKj_tY7SKetWEUxZVNMojXDLkrI?usp=drive_link"
+  }
+]

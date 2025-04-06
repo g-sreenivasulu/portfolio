@@ -1,80 +1,83 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  title: string;
-  description: string;
-  date: string;
-  images: string[];
+  award: CollectionEntry<"awards">;
 }
 
-const { title, description, date, images } = Astro.props;
+const { award } = Astro.props;
+
+const { title, description, date, images } = award.data;
 ---
 
 <div
   id="award-gallery"
-  class="hidden md:w-4/5 lg:w-3/5 p-2 md:grid grid-cols-2 gap-4 rounded-2xl from-accent/40 to-accent/30 bg-gradient-to-br">
+  class="from-accent/40 to-accent/30 hidden grid-cols-2 gap-4 rounded-2xl bg-linear-to-br p-2 md:grid md:w-4/5 lg:w-3/5"
+>
   {
     images.map((image) => (
       <a
-        href={image}
+        href={image.src}
         data-pswp-width="1024"
         data-pswp-height="576"
-        target="_blank">
-        <Picture
+        target="_blank"
+      >
+        <Image
           width={350}
           height={197}
-          widths={[350]}
           src={image}
           alt={title}
-          aspectRatio="16:9"
           sizes="(max-width: 800px) 100vw, 350px"
           loading="eager"
           format="webp"
-          class="object-cover rounded-2xl m-auto hover:scale-[101.5%] transition ease-in-out duration-200"
+          class="m-auto aspect-video rounded-2xl object-cover transition duration-100 ease-in-out hover:scale-[101.5%]"
         />
       </a>
     ))
   }
-  <div class="flex flex-col text-center items-center justify-center">
+  <div class="flex flex-col items-center justify-center text-center">
     <p class="text-[22px] lg:text-3xl">{title}</p>
-    <p class="text-sm lg:text-md my-1 lg:my-2">{description}</p>
+    <p class="lg:text-md my-1 text-sm lg:my-2">{description}</p>
     <p class="text-sm">{date}</p>
   </div>
 </div>
 
 <div
   id="award-gallery"
-  class="flex flex-col w-full md:hidden rounded-2xl from-accent/40 to-accent/30 bg-gradient-to-br">
+  class="from-accent/40 to-accent/30 flex w-full flex-col rounded-2xl bg-linear-to-br md:hidden"
+>
   <div
-    class="flex gap-x-6 my-2 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scroll-smooth">
+    class="my-2 flex snap-x snap-mandatory gap-x-6 overflow-x-auto overflow-y-hidden scroll-smooth"
+  >
     {
       images.map((image) => (
         <a
-          class="flex-none w-full snap-center snap-always"
-          href={image}
+          class="w-full flex-none snap-center snap-always"
+          href={image.src}
           data-pswp-width="900"
           data-pswp-height="506"
-          target="_blank">
-          <Picture
+          data-cropped="true"
+          target="_blank"
+        >
+          <Image
             width={600}
             height={338}
             widths={[600]}
             src={image}
             alt={title}
-            aspectRatio="16:9"
             sizes="(max-width: 800px) 100vw, 600px"
             loading="eager"
             format="webp"
-            class="w-full h-full object-cover p-2 rounded-2xl m-auto"
+            class="m-auto aspect-video h-full w-full rounded-2xl object-cover p-2"
           />
         </a>
       ))
     }
   </div>
-  <div class="flex flex-col text-center p-2">
+  <div class="flex flex-col p-2 text-center">
     <p class="text-xl lg:text-3xl">{title}</p>
-    <p class="text-sm lg:text-md my-1 lg:my-2">{description}</p>
+    <p class="lg:text-md my-1 text-sm lg:my-2">{description}</p>
     <p class="text-sm">{date}</p>
   </div>
 </div>

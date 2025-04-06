@@ -3,6 +3,7 @@ import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
 
 export interface Props {
   title: string;
@@ -12,15 +13,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
   "/opengraph.jpg",
-  Astro.site
+  Astro.site,
 ).toString();
 
 const { title } = Astro.props;
 
-const makeTitle = title ? title + " | Dr. Sreenivasulu Gogula" : "Dr. Sreenivasulu Gogula";
+const makeTitle = title
+  ? `${title} | Dr. Sreenivasulu Gogula`
+  : "Dr. Sreenivasulu Gogula";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -43,10 +46,11 @@ const makeTitle = title ? title + " | Dr. Sreenivasulu Gogula" : "Dr. Sreenivasu
         },
       }}
     />
+    <ClientRouter />
   </head>
   <body>
     <Navbar />
-    <div class="min-h-screen  text-base-content">
+    <div class="text-base-content min-h-screen">
       <slot />
     </div>
     <Footer />

@@ -1,6 +1,6 @@
 ---
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import SectionHead from "@components/section-head.astro";
 import Layout from "@layouts/Layout.astro";
 import achievements from "@data/achievements.json";
 
@@ -10,13 +10,15 @@ const professional = achievements.professional;
 
 <Layout title="Achievements">
   <Container>
-    <Sectionhead>
+    <SectionHead>
       <Fragment slot="title">Achievements</Fragment>
-      <Fragment slot="desc">Professional & Academic Achievements of Dr. G. Sreenivasulu</Fragment>
-    </Sectionhead>
+      <Fragment slot="desc"
+        >Professional & Academic Achievements of Dr. G. Sreenivasulu</Fragment
+      >
+    </SectionHead>
 
     <div class="mx-auto max-w-4xl">
-      <h2 class="text-2xl sm:text-3xl font-semibold pb-2 mt-8">
+      <h2 class="mt-8 pb-2 text-2xl font-semibold sm:text-3xl">
         Professional Achievements
       </h2>
 
@@ -24,7 +26,7 @@ const professional = achievements.professional;
         {professional.map((value) => <li class="py-2">{value}</li>)}
       </ul>
 
-      <h2 class="text-2xl sm:text-3xl font-semibold pb-2 mt-4">
+      <h2 class="mt-4 pb-2 text-2xl font-semibold sm:text-3xl">
         Academic Achievements
       </h2>
 
