@@ -22,5 +22,13 @@
     "coverPhoto": "assets/books-published/fundamentals of java programming.avif",
     "publishedURL": "#",
     "yearPublished": 2023
+  },
+  {
+    "id": "Mastering Big Data with Python and Dask",
+    "title": "Fundamentals of Java Programming",
+    "description": "This textbook covers Mastering Big Data with Python and Dask",
+    "coverPhoto": "assets/books-published/Mastering-Big-Data-with-Python-and-Dask.jpg",
+    "publishedURL": "https://restpublisher.com/books/",
+    "yearPublished": 2024
   }
 ]
