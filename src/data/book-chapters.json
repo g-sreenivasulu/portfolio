@@ -6,5 +6,13 @@
     "coverPhoto": "assets/book-chapters/IoT-and-Big-Data-analytics-for-smart-cities.jpg",
     "publishedURL": "https://www.amazon.com.au/IoT-Data-Analytics-Smart-Cities/dp/103210855X",
     "yearPublished": 2022
+  },
+  {
+    "id": "Fostering Cross-Industry Sustainability With Intelligent Technologies",
+    "title": "Fostering Cross-Industry Sustainability With Intelligent Technologies",
+    "description": "Exploring AI and Machine Learning Integration in Medical Assistive Robotics: An Experimental Approach. Chapter 9, Pg 130 - 151",
+    "coverPhoto": "assets/book-chapters/fostering-cross-industry-sus-with-intelligent-tech.webp",
+    "publishedURL": "https://www.igi-global.com/chapter/exploring-ai-and-machine-learning-integration-in-medical-assistive-robotics/337532",
+    "yearPublished": 2024
   }
 ]
